@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>세피리아 아이템 정리기</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="loading-overlay" class="loading-overlay">
+    <div class="loading-spinner"></div>
+    <p>최적의 배치를 찾고 있습니다...</p>
+  </div>
+
+  <div class="layout">
+    <div class="main-body">
+      <div class="left-pane">
+        <div class="top-controls"> <strong>🎛 슬롯 설정:</strong>
+          <label><input type="checkbox" class="option" id="option-fox" name="option-fox" value="6"> 여우(+6)</label>
+          <label><input type="checkbox" class="option" id="option-survival10" name="option-survival10" value="3"> 생존10(+3)</label>
+          <label><input type="checkbox" class="option" id="option-survival20" name="option-survival20" value="-12"> 생존20(-12)</label>
+        </div>
+
+        <h4> 인벤토리 미리보기 </h4>
+        <div class="grid" id="main-grid"></div>
+
+        <button id="quick-arrange-btn">⚡ 빠른 배치 (3초)</button>
+        <button id="deep-arrange-btn">💎 정밀 배치 (10초)</button>
+
+      </div>
+
+      <div class="right-pane">
+        <div class="item-tab">
+          <button id="tab-artifacts" class="active">🧿 아티팩트</button>
+          <button id="tab-slates">📜 석판</button>
+        </div>
+        <div class="search-filter-area">
+            <input type="text" id="item-search" placeholder="아이템 이름 또는 태그 검색" />
+            <div id="tag-filters"></div>
+        </div>
+        <div class="item-list" id="item-list"></div>
+
+        <h4>✅ 선택된 아티팩트</h4>
+        <div id="selected-artifacts" class="selection-list"></div>
+
+        <h4>✅ 선택된 석판</h4>
+        <div id="selected-slates" class="selection-list"></div>
+
+        <h4>🔢 아티팩트 배치 우선순위 (클릭 순서)</h4>
+        <div id="priority-list" class="priority-list"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="algorithms.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

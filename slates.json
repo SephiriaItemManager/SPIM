@@ -1,0 +1,802 @@
+[
+  {
+    "id": "slate_1",
+    "name": "건조",
+    "rarity": "Common",
+    "condition": "",
+    "icon": "slate_01.png",
+    "buffcoords": [
+      { "x": 0, "y": -1, "value": "+1" },
+      { "x": 0, "y": 1, "value": "+1" }
+    ],
+    "conditionUnlock": "",
+    "rotatable": false
+  },
+  {
+    "id": "slate_2",
+    "name": "근사",
+    "rarity": "Common",
+    "condition": "",
+    "icon": "slate_02.png",
+    "buffcoords": [
+      { "x": 0, "y": -1, "value": "+1" },
+      { "x": 1, "y": 0, "value": "+1" }
+    ],
+    "conditionUnlock": "",
+    "rotatable": true
+  },
+  {
+    "id": "slate_3",
+    "name": "기사도",
+    "rarity": "Common",
+    "condition": "",
+    "icon": "slate_03.png",
+    "buffcoords": [
+      { "x": -1, "y": -2, "value": "+1" }
+    ],
+    "conditionUnlock": "",
+    "rotatable": true
+  },
+  {
+    "id": "slate_4",
+    "name": "도래",
+    "rarity": "Common",
+    "condition": "",
+    "icon": "slate_04.png",
+    "buffcoords": [
+      { "x": -2, "y": 0, "value": "-1" },
+      { "x": -1, "y": 0, "value": "-1" },
+      { "x": 1, "y": 0, "value": "+1" },
+      { "x": 2, "y": 0, "value": "+1" }
+    ],
+    "conditionUnlock": "",
+    "rotatable": true
+  },
+  {
+    "id": "slate_5",
+    "name": "선의",
+    "rarity": "Common",
+    "condition": "최하단",
+    "icon": "slate_05.png",
+    "buffcoords": [
+      { "x": -1, "y": 0, "value": "+1" },
+      { "x": 1, "y": 0, "value": "+1" }
+    ],
+    "conditionUnlock": "",
+    "rotatable": false
+  },
+  {
+    "id": "slate_6",
+    "name": "시선",
+    "rarity": "Common",
+    "condition": "",
+    "icon": "slate_06.png",
+    "buffcoords": [
+      { "x": -1, "y": -1, "value": "+1" },
+      { "x": 1, "y": 1, "value": "-1" }
+    ],
+    "conditionUnlock": "",
+    "rotatable": true
+  },
+  {
+    "id": "slate_7",
+    "name": "악수",
+    "rarity": "Common",
+    "condition": "",
+    "icon": "slate_07.png",
+    "buffcoords": [
+      { "x": -1, "y": 0, "value": "+1" },
+      { "x": 1, "y": 0, "value": "+1" }
+    ],
+    "conditionUnlock": "",
+    "rotatable": true
+  },
+  {
+    "id": "slate_8",
+    "name": "운명",
+    "rarity": "Common",
+    "condition": "",
+    "icon": "slate_08.png",
+    "buffcoords": [
+      { "x": 0, "y": 1, "value": "+1" }
+    ],
+    "conditionUnlock": "",
+    "rotatable": false
+  },
+  {
+    "id": "slate_9",
+    "name": "재치",
+    "rarity": "Common",
+    "condition": "",
+    "icon": "slate_09.png",
+    "buffcoords": [
+      { "x": -1, "y": -1, "value": "+1" }
+    ],
+    "conditionUnlock": "",
+    "rotatable": true
+  },
+  {
+    "id": "slate_10",
+    "name": "착취",
+    "rarity": "Common",
+    "condition": "",
+    "icon": "slate_10.png",
+    "buffcoords": [
+      { "x": -1, "y": 0, "value": "-1" },
+      { "x": 1, "y": 0, "value": "+1" }
+    ],
+    "conditionUnlock": "",
+    "rotatable": true
+  },
+  {
+    "id": "slate_11",
+    "name": "화합",
+    "rarity": "Common",
+    "condition": "",
+    "icon": "slate_11.png",
+    "buffcoords": [
+      { "x": 0, "y": -1, "value": "-1" },
+      { "x": -1, "y": 0, "value": "-1" },
+      { "x": 1, "y": 0, "value": "+1" },
+      { "x": 0, "y": 1, "value": "+1" }
+    ],
+    "conditionUnlock": "",
+    "rotatable": true
+  },
+  {
+    "id": "slate_12",
+    "name": "환호",
+    "rarity": "Common",
+    "condition": "",
+    "icon": "slate_12.png",
+    "buffcoords": [
+      { "x": 0, "y": -1, "value": "+1" }
+    ],
+    "conditionUnlock": "",
+    "rotatable": false
+  },
+  {
+    "id": "slate_13",
+    "name": "희망",
+    "rarity": "Common",
+    "condition": "",
+    "icon": "slate_13.png",
+    "buffcoords": [
+      { "x": 1, "y": 0, "value": "+1" }
+    ],
+    "conditionUnlock": "",
+    "rotatable": true
+  },
+  {
+    "id": "slate_14",
+    "name": "경쟁",
+    "rarity": "UnCommon",
+    "condition": "",
+    "icon": "slate_14.png",
+    "buffcoords": [
+      { "x": 1, "y": -1, "value": "-1" },
+      { "x": -1, "y": 0, "value": "+2" },
+      { "x": 1, "y": 0, "value": "-1" }
+    ],
+    "conditionUnlock": "",
+    "rotatable": true
+  },
+  {
+    "id": "slate_15",
+    "name": "고동",
+    "rarity": "UnCommon",
+    "condition": "",
+    "icon": "slate_15.png",
+    "buffcoords": [
+      { "x": 2, "y": 0, "value": "+2" }
+    ],
+    "conditionUnlock": "",
+    "rotatable": true
+  },
+  {
+    "id": "slate_16",
+    "name": "고양",
+    "rarity": "UnCommon",
+    "condition": "",
+    "icon": "slate_16.png",
+    "buffcoords": [
+      { "x": 1, "y": 0, "value": "limitUnlock" }
+    ],
+    "conditionUnlock": "",
+    "rotatable": true
+  },
+  {
+    "id": "slate_17",
+    "name": "과거",
+    "rarity": "UnCommon",
+    "condition": "",
+    "icon": "slate_17.png",
+    "buffcoords": [
+      { "x": -1, "y": -1, "value": "+1" },
+      { "x": 0, "y": -1, "value": "+1" },
+      { "x": 1, "y": -1, "value": "+1" },
+      { "x": 1, "y": 0, "value": "+1" }
+    ],
+    "conditionUnlock": "",
+    "rotatable": true
+  },
+  {
+    "id": "slate_18",
+    "name": "미래",
+    "rarity": "UnCommon",
+    "condition": "",
+    "icon": "slate_18.png",
+    "buffcoords": [
+      { "x": -1, "y": -1, "value": "+1" },
+      { "x": 0, "y": -1, "value": "+1" },
+      { "x": 1, "y": -1, "value": "+1" },
+      { "x": -1, "y": 0, "value": "+1" }
+    ],
+    "conditionUnlock": "",
+    "rotatable": true
+  },
+  {
+    "id": "slate_19",
+    "name": "분배",
+    "rarity": "UnCommon",
+    "condition": "",
+    "icon": "slate_19.png",
+    "buffcoords": [
+      { "x": 0, "y": -1, "value": "+1" },
+      { "x": -1, "y": 0, "value": "+1" },
+      { "x": 1, "y": 0, "value": "+1" },
+      { "x": 0, "y": 1, "value": "+1" }
+    ],
+    "conditionUnlock": "",
+    "rotatable": true
+  },
+  {
+    "id": "slate_20",
+    "name": "삼두",
+    "rarity": "UnCommon",
+    "condition": "",
+    "icon": "slate_20.png",
+    "buffcoords": [
+      { "x": 0, "y": -1, "value": "+1" },
+      { "x": -1, "y": 0, "value": "+1" },
+      { "x": 1, "y": 0, "value": "+1" }
+    ],
+    "conditionUnlock": "",
+    "rotatable": false
+  },
+  {
+    "id": "slate_21",
+    "name": "수확",
+    "rarity": "UnCommon",
+    "condition": "",
+    "icon": "slate_21.png",
+    "buffcoords": [
+      { "x": -1, "y": 0, "value": "+2" },
+      { "x": 1, "y": 0, "value": "+2" }
+    ],
+    "conditionUnlock": "",
+    "rotatable": true
+  },
+  {
+    "id": "slate_22",
+    "name": "쌍성",
+    "rarity": "UnCommon",
+    "condition": "",
+    "icon": "slate_22.png",
+    "buffcoords": [
+      { "x": -2, "y": 0, "value": "+2" },
+      { "x": 2, "y": 0, "value": "+2" }
+    ],
+    "conditionUnlock": "",
+    "rotatable": true
+  },
+  {
+    "id": "slate_23",
+    "name": "양육",
+    "rarity": "UnCommon",
+    "condition": "",
+    "icon": "slate_23.png",
+    "buffcoords": [
+      { "x": 1, "y": -1, "value": "+1" },
+      { "x": -2, "y": 0, "value": "-1" },
+      { "x": -1, "y": 0, "value": "-1" },
+      { "x": 1, "y": 0, "value": "+1" },
+      { "x": 1, "y": 1, "value": "+1" }
+    ],
+    "conditionUnlock": "",
+    "rotatable": true
+  },
+  {
+    "id": "slate_24",
+    "name": "열망",
+    "rarity": "UnCommon",
+    "condition": "",
+    "icon": "slate_24.png",
+    "buffcoords": [
+      { "x": 0, "y": -1, "value": "+2" }
+    ],
+    "conditionUnlock": "",
+    "rotatable": false
+  },
+  {
+    "id": "slate_25",
+    "name": "응집",
+    "rarity": "UnCommon",
+    "condition": "",
+    "icon": "slate_25.png",
+    "buffcoords": [
+      { "x": 0, "y": -1, "value": "+3" },
+      { "x": -6, "y": 0, "value": "-1" },
+      { "x": -5, "y": 0, "value": "-1" },
+      { "x": -4, "y": 0, "value": "-1" },
+      { "x": -3, "y": 0, "value": "-1" },
+      { "x": -2, "y": 0, "value": "-1" },
+      { "x": -1, "y": 0, "value": "-1" },
+      { "x": 1, "y": 0, "value": "-1" },
+      { "x": 2, "y": 0, "value": "-1" },
+      { "x": 3, "y": 0, "value": "-1" },
+      { "x": 4, "y": 0, "value": "-1" },
+      { "x": 5, "y": 0, "value": "-1" },
+      { "x": 6, "y": 0, "value": "-1" }
+    ],
+    "conditionUnlock": "",
+    "rotatable": true
+  },
+  {
+    "id": "slate_26",
+    "name": "입구",
+    "rarity": "UnCommon",
+    "condition": "",
+    "icon": "slate_26.png",
+    "buffcoords": [
+      { "x": -1, "y": -1, "value": "+1" },
+      { "x": 0, "y": -1, "value": "+2" },
+      { "x": 1, "y": -1, "value": "+1" }
+    ],
+    "conditionUnlock": "",
+    "rotatable": false
+  },
+  {
+    "id": "slate_27",
+    "name": "장난",
+    "rarity": "UnCommon",
+    "condition": "",
+    "icon": "slate_27.png",
+    "buffcoords": [
+      { "x": -1, "y": -1, "value": "+1" },
+      { "x": 0, "y": -1, "value": "+1" },
+      { "x": 1, "y": -1, "value": "+1" },
+      { "x": -1, "y": 0, "value": "-1" },
+      { "x": 1, "y": 0, "value": "-1" }
+    ],
+    "conditionUnlock": "",
+    "rotatable": true
+  },
+  {
+    "id": "slate_28",
+    "name": "적재",
+    "rarity": "UnCommon",
+    "condition": "",
+    "icon": "slate_28.png",
+    "buffcoords": [
+      { "x": -2, "y": 0, "value": "+1" },
+      { "x": -1, "y": 0, "value": "+1" },
+      { "x": -2, "y": 1, "value": "+1" },
+      { "x": -1, "y": 1, "value": "+1" }
+    ],
+    "conditionUnlock": "",
+    "rotatable": true
+  },
+  {
+    "id": "slate_29",
+    "name": "전이",
+    "rarity": "UnCommon",
+    "condition": "",
+    "icon": "slate_29.png",
+    "buffcoords": [
+      { "x": 0, "y": -6, "value": "-1" },
+      { "x": 0, "y": -5, "value": "-1" },
+      { "x": 0, "y": -4, "value": "-1" },
+      { "x": 0, "y": -3, "value": "-1" },
+      { "x": 0, "y": -2, "value": "-1" },
+      { "x": 0, "y": -1, "value": "-1" },
+      { "x": -6, "y": 0, "value": "+1" },
+      { "x": -5, "y": 0, "value": "+1" },
+      { "x": -4, "y": 0, "value": "+1" },
+      { "x": -3, "y": 0, "value": "+1" },
+      { "x": -2, "y": 0, "value": "+1" },
+      { "x": -1, "y": 0, "value": "+1" },
+      { "x": 1, "y": 0, "value": "+1" },
+      { "x": 2, "y": 0, "value": "+1" },
+      { "x": 3, "y": 0, "value": "+1" },
+      { "x": 4, "y": 0, "value": "+1" },
+      { "x": 5, "y": 0, "value": "+1" },
+      { "x": 6, "y": 0, "value": "+1" },
+      { "x": 0, "y": 1, "value": "-1" },
+      { "x": 0, "y": 2, "value": "-1" },
+      { "x": 0, "y": 3, "value": "-1" },
+      { "x": 0, "y": 4, "value": "-1" },
+      { "x": 0, "y": 5, "value": "-1" },
+      { "x": 0, "y": 6, "value": "-1" }
+    ],
+    "conditionUnlock": "",
+    "rotatable": true
+  },
+  {
+    "id": "slate_30",
+    "name": "전진",
+    "rarity": "UnCommon",
+    "condition": "",
+    "icon": "slate_30.png",
+    "buffcoords": [
+      { "x": 1, "y": 0, "value": "+1" },
+      { "x": 2, "y": 0, "value": "+1" },
+      { "x": 3, "y": 0, "value": "+1" }
+    ],
+    "conditionUnlock": "",
+    "rotatable": true
+  },
+  {
+    "id": "slate_31",
+    "name": "정의",
+    "rarity": "UnCommon",
+    "condition": "양쪽 끝",
+    "icon": "slate_31.png",
+    "buffcoords": [
+      { "x": 0, "y": -6, "value": "+1" },
+      { "x": 0, "y": -5, "value": "+1" },
+      { "x": 0, "y": -4, "value": "+1" },
+      { "x": 0, "y": -3, "value": "+1" },
+      { "x": 0, "y": -2, "value": "+1" },
+      { "x": 0, "y": -1, "value": "+1" },
+      { "x": 0, "y": 1, "value": "+1" },
+      { "x": 0, "y": 2, "value": "+1" },
+      { "x": 0, "y": 3, "value": "+1" },
+      { "x": 0, "y": 4, "value": "+1" },
+      { "x": 0, "y": 5, "value": "+1" },
+      { "x": 0, "y": 6, "value": "+1" }
+    ],
+    "conditionUnlock": "",
+    "rotatable": false
+  },
+  {
+    "id": "slate_32",
+    "name": "준비",
+    "rarity": "UnCommon",
+    "condition": "",
+    "icon": "slate_32.png",
+    "buffcoords": [
+      { "x": -1, "y": -1, "value": "+1" },
+      { "x": 1, "y": 1, "value": "+1" }
+    ],
+    "conditionUnlock": "",
+    "rotatable": true
+  },
+  {
+    "id": "slate_33",
+    "name": "파도",
+    "rarity": "UnCommon",
+    "condition": "",
+    "icon": "slate_33.png",
+    "buffcoords": [
+      { "x": -1, "y": -1, "value": "+2" },
+      { "x": 0, "y": -1, "value": "-1" },
+      { "x": -1, "y": 0, "value": "-1" }
+    ],
+    "conditionUnlock": "",
+    "rotatable": true
+  },
+  {
+    "id": "slate_34",
+    "name": "헌정",
+    "rarity": "UnCommon",
+    "condition": "",
+    "icon": "slate_34.png",
+    "buffcoords": [
+      { "x": -1, "y": -1, "value": "+1" },
+      { "x": 1, "y": -1, "value": "+1" },
+      { "x": -1, "y": 1, "value": "+1" },
+      { "x": 1, "y": 1, "value": "+1" }
+    ],
+    "conditionUnlock": "",
+    "rotatable": true
+  },
+  {
+    "id": "slate_35",
+    "name": "기반",
+    "rarity": "Rare",
+    "condition": "",
+    "icon": "slate_35.png",
+    "buffcoords": [
+      { "x": -6, "y": 0, "value": "+1" },
+      { "x": -5, "y": 0, "value": "+1" },
+      { "x": -4, "y": 0, "value": "+1" },
+      { "x": -3, "y": 0, "value": "+1" },
+      { "x": -2, "y": 0, "value": "+1" },
+      { "x": -1, "y": 0, "value": "+1" },
+      { "x": 1, "y": 0, "value": "+1" },
+      { "x": 2, "y": 0, "value": "+1" },
+      { "x": 3, "y": 0, "value": "+1" },
+      { "x": 4, "y": 0, "value": "+1" },
+      { "x": 5, "y": 0, "value": "+1" },
+      { "x": 6, "y": 0, "value": "+1" }
+    ],
+    "conditionUnlock": "",
+    "rotatable": false
+  },
+  {
+    "id": "slate_36",
+    "name": "권능",
+    "rarity": "Rare",
+    "condition": "",
+    "icon": "slate_36.png",
+    "buffcoords": [
+      { "x": 1, "y": 0, "value": "+3" }
+    ],
+    "conditionUnlock": "",
+    "rotatable": true
+  },
+  {
+    "id": "slate_37",
+    "name": "단절",
+    "rarity": "Rare",
+    "condition": "",
+    "icon": "slate_37.png",
+    "buffcoords": [
+      { "x": 0, "y": -1, "value": "+3" },
+      { "x": -1, "y": 0, "value": "-1" },
+      { "x": 1, "y": 0, "value": "-1" },
+      { "x": 0, "y": 1, "value": "+3" }
+    ],
+    "conditionUnlock": "",
+    "rotatable": false
+  },
+  {
+    "id": "slate_38",
+    "name": "동시성",
+    "rarity": "Rare",
+    "condition": "",
+    "icon": "slate_38.png",
+    "buffcoords": [
+      { "x": 0, "y": -6, "value": "+1" },
+      { "x": 0, "y": -5, "value": "+1" },
+      { "x": 0, "y": -4, "value": "+1" },
+      { "x": 0, "y": -3, "value": "+1" },
+      { "x": 0, "y": -2, "value": "+1" },
+      { "x": 0, "y": -1, "value": "+1" },
+      { "x": 0, "y": 1, "value": "+1" },
+      { "x": 0, "y": 2, "value": "+1" },
+      { "x": 0, "y": 3, "value": "+1" },
+      { "x": 0, "y": 4, "value": "+1" },
+      { "x": 0, "y": 5, "value": "+1" },
+      { "x": 0, "y": 6, "value": "+1" }
+    ],
+    "conditionUnlock": "",
+    "rotatable": false
+  },
+  {
+    "id": "slate_39",
+    "name": "맹세",
+    "rarity": "Rare",
+    "condition": "",
+    "icon": "slate_39.png",
+    "buffcoords": [
+      { "x": 0, "y": -2, "value": "+2" },
+      { "x": 0, "y": -1, "value": "+1" },
+      { "x": -1, "y": 0, "value": "+1" },
+      { "x": 1, "y": 0, "value": "+1" },
+      { "x": 0, "y": 1, "value": "+1" }
+    ],
+    "conditionUnlock": "",
+    "rotatable": true
+  },
+  {
+    "id": "slate_40",
+    "name": "반항",
+    "rarity": "Rare",
+    "condition": "",
+    "icon": "slate_40.png",
+    "buffcoords": [
+      { "x": 6, "y": -6, "value": "+1" },
+      { "x": 5, "y": -5, "value": "+1" },
+      { "x": 4, "y": -4, "value": "+1" },
+      { "x": 3, "y": -3, "value": "+1" },
+      { "x": 2, "y": -2, "value": "+1" },
+      { "x": 1, "y": -1, "value": "+1" },
+      { "x": -1, "y": 1, "value": "+1" },
+      { "x": -2, "y": 2, "value": "+1" },
+      { "x": -3, "y": 3, "value": "+1" },
+      { "x": -4, "y": 4, "value": "+1" },
+      { "x": -5, "y": 5, "value": "+1" },
+      { "x": -6, "y": 6, "value": "+1" }
+    ],
+    "conditionUnlock": "",
+    "rotatable": true
+  },
+  {
+    "id": "slate_41",
+    "name": "이음",
+    "rarity": "Rare",
+    "condition": "",
+    "icon": "slate_41.png",
+    "buffcoords": [
+      { "x": -1, "y": 0, "value": "+2" },
+      { "x": 1, "y": 0, "value": "limitUnlock" }
+    ],
+    "conditionUnlock": "",
+    "rotatable": true
+  },
+  {
+    "id": "slate_42",
+    "name": "차양",
+    "rarity": "Rare",
+    "condition": "최상단",
+    "icon": "slate_42.png",
+    "buffcoords": [
+      { "x": -6, "y": 6, "value": 1, "type": "downside" },
+      { "x": -5, "y": 6, "value": 1, "type": "downside" },
+      { "x": -4, "y": 6, "value": 1, "type": "downside" },
+      { "x": -3, "y": 6, "value": 1, "type": "downside" },
+      { "x": -2, "y": 6, "value": 1, "type": "downside" },
+      { "x": -1, "y": 6, "value": 1, "type": "downside" },
+      { "x": 0, "y": 6, "value": 1, "type": "downside" },
+      { "x": 1, "y": 6, "value": 1, "type": "downside" },
+      { "x": 2, "y": 6, "value": 1, "type": "downside" },
+      { "x": 3, "y": 6, "value": 1, "type": "downside" },
+      { "x": 4, "y": 6, "value": 1, "type": "downside" },
+      { "x": 5, "y": 6, "value": 1, "type": "downside" },
+      { "x": 6, "y": 6, "value": 1, "type": "downside" }
+    ],
+    "conditionUnlock": "",
+    "rotatable": false
+  },
+  {
+    "id": "slate_43",
+    "name": "가시",
+    "rarity": "Legendary",
+    "condition": "",
+    "icon": "slate_43.png",
+    "buffcoords": [
+      { "x": -1, "y": -1, "value": "+1" },
+      { "x": 0, "y": -1, "value": "+2" },
+      { "x": 1, "y": -1, "value": "+1" },
+      { "x": -1, "y": 0, "value": "+1" },
+      { "x": 1, "y": 0, "value": "+1" },
+      { "x": -1, "y": 1, "value": "+1" },
+      { "x": 0, "y": 1, "value": "+2" },
+      { "x": 1, "y": 1, "value": "+1" }
+    ],
+    "conditionUnlock": "",
+    "rotatable": false
+  },
+  {
+    "id": "slate_44",
+    "name": "경계",
+    "rarity": "Legendary",
+    "condition": "",
+    "icon": "slate_44.png",
+    "buffcoords": [
+      { "x": -6, "y": -6, "value": 1, "type": "edge" },
+      { "x": -5, "y": -6, "value": 1, "type": "edge" },
+      { "x": -4, "y": -6, "value": 1, "type": "edge" },
+      { "x": -3, "y": -6, "value": 1, "type": "edge" },
+      { "x": -2, "y": -6, "value": 1, "type": "edge" },
+      { "x": -1, "y": -6, "value": 1, "type": "edge" },
+      { "x": 0, "y": -6, "value": 1, "type": "edge" },
+      { "x": 1, "y": -6, "value": 1, "type": "edge" },
+      { "x": 2, "y": -6, "value": 1, "type": "edge" },
+      { "x": 3, "y": -6, "value": 1, "type": "edge" },
+      { "x": 4, "y": -6, "value": 1, "type": "edge" },
+      { "x": 5, "y": -6, "value": 1, "type": "edge" },
+      { "x": 6, "y": -6, "value": 1, "type": "edge" },
+      { "x": -6, "y": 6, "value": 1, "type": "edge" },
+      { "x": -5, "y": 6, "value": 1, "type": "edge" },
+      { "x": -4, "y": 6, "value": 1, "type": "edge" },
+      { "x": -3, "y": 6, "value": 1, "type": "edge" },
+      { "x": -2, "y": 6, "value": 1, "type": "edge" },
+      { "x": -1, "y": 6, "value": 1, "type": "edge" },
+      { "x": 0, "y": 6, "value": 1, "type": "edge" },
+      { "x": 1, "y": 6, "value": 1, "type": "edge" },
+      { "x": 2, "y": 6, "value": 1, "type": "edge" },
+      { "x": 3, "y": 6, "value": 1, "type": "edge" },
+      { "x": 4, "y": 6, "value": 1, "type": "edge" },
+      { "x": 5, "y": 6, "value": 1, "type": "edge" },
+      { "x": 6, "y": 6, "value": 1, "type": "edge" }
+    ],
+    "conditionUnlock": "",
+    "rotatable": false
+  },
+  {
+    "id": "slate_45",
+    "name": "광휘",
+    "rarity": "Legendary",
+    "condition": "",
+    "icon": "slate_45.png",
+    "buffcoords": [
+      { "x": 0, "y": -1, "value": "+2" },
+      { "x": -6, "y": 0, "value": "+1" },
+      { "x": -5, "y": 0, "value": "+1" },
+      { "x": -4, "y": 0, "value": "+1" },
+      { "x": -3, "y": 0, "value": "+1" },
+      { "x": -2, "y": 0, "value": "+1" },
+      { "x": -1, "y": 0, "value": "+1" },
+      { "x": 1, "y": 0, "value": "+1" },
+      { "x": 2, "y": 0, "value": "+1" },
+      { "x": 3, "y": 0, "value": "+1" },
+      { "x": 4, "y": 0, "value": "+1" },
+      { "x": 5, "y": 0, "value": "+1" },
+      { "x": 6, "y": 0, "value": "+1" },
+      { "x": 0, "y": 1, "value": "+2" }
+    ],
+    "conditionUnlock": "",
+    "rotatable": true
+  },
+  {
+    "id": "slate_46",
+    "name": "기적",
+    "rarity": "Legendary",
+    "condition": "",
+    "icon": "slate_46.png",
+    "buffcoords": [
+      { "x": 0, "y": -6, "value": "+1" },
+      { "x": 0, "y": -5, "value": "+1" },
+      { "x": 0, "y": -4, "value": "+1" },
+      { "x": 0, "y": -3, "value": "+1" },
+      { "x": 0, "y": -2, "value": "+1" },
+      { "x": 0, "y": -1, "value": "+1" },
+      { "x": -6, "y": 0, "value": "+1" },
+      { "x": -5, "y": 0, "value": "+1" },
+      { "x": -4, "y": 0, "value": "+1" },
+      { "x": -3, "y": 0, "value": "+1" },
+      { "x": -2, "y": 0, "value": "+1" },
+      { "x": -1, "y": 0, "value": "+1" },
+      { "x": 1, "y": 0, "value": "+1" },
+      { "x": 2, "y": 0, "value": "+1" },
+      { "x": 3, "y": 0, "value": "+1" },
+      { "x": 4, "y": 0, "value": "+1" },
+      { "x": 5, "y": 0, "value": "+1" },
+      { "x": 6, "y": 0, "value": "+1" },
+      { "x": 0, "y": 1, "value": "+1" },
+      { "x": 0, "y": 2, "value": "+1" },
+      { "x": 0, "y": 3, "value": "+1" },
+      { "x": 0, "y": 4, "value": "+1" },
+      { "x": 0, "y": 5, "value": "+1" },
+      { "x": 0, "y": 6, "value": "+1" }
+    ],
+    "conditionUnlock": "",
+    "rotatable": true
+  },
+  {
+    "id": "slate_47",
+    "name": "백일몽",
+    "rarity": "Legendary",
+    "condition": "",
+    "icon": "slate_47.png",
+    "buffcoords": [
+      { "x": -1, "y": -2, "value": "+1" },
+      { "x": 1, "y": -2, "value": "+1" },
+      { "x": -1, "y": -1, "value": "+1" },
+      { "x": 1, "y": -1, "value": "+1" },
+      { "x": -1, "y": 1, "value": "+1" },
+      { "x": 1, "y": 1, "value": "+1" },
+      { "x": -1, "y": 2, "value": "+1" },
+      { "x": 1, "y": 2, "value": "+1" }
+    ],
+    "conditionUnlock": "",
+    "rotatable": true
+  },
+  {
+    "id": "slate_48",
+    "name": "압축",
+    "rarity": "Legendary",
+    "condition": "",
+    "icon": "slate_48.png",
+    "buffcoords": [
+      { "x": 1, "y": 0, "value": "+3" },
+      { "x": 2, "y": 0, "value": "+2" },
+      { "x": 3, "y": 0, "value": "+1" }
+    ],
+    "conditionUnlock": "",
+    "rotatable": true
+  }
+]
