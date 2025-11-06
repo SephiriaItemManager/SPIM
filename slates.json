@@ -1,0 +1,1515 @@
+[
+  {
+    "id": "slate_1",
+    "name": "건조",
+    "rarity": "Common",
+    "condition": "none",
+    "icon": "slate_01.png",
+    "buffcoords": [
+      [ 0, -1, 1, "none" ],
+      [ 0, 1, 1, "none" ]
+    ],
+    "rotatable": false
+  },
+  {
+    "id": "slate_2",
+    "name": "근사",
+    "rarity": "Common",
+    "condition": "none",
+    "icon": "slate_02.png",
+    "buffcoords": {
+      "0": [
+        [ 1, 0, 1, "none" ],
+        [ 0, 1, 1, "none" ]
+      ],
+      "90": [
+        [ 0, 1, 1, "none" ],
+        [ -1, 0, 1, "none" ]
+      ],
+      "180": [
+        [ -1, 0, 1, "none" ],
+        [ 0, -1, 1, "none" ]
+      ],
+      "270": [
+        [ 0, -1, 1, "none" ],
+        [ 1, 0, 1, "none" ]
+      ]
+    },
+    "rotatable": true
+  },
+  {
+    "id": "slate_3",
+    "name": "기사도",
+    "rarity": "Common",
+    "condition": "none",
+    "icon": "slate_03.png",
+    "buffcoords": {
+      "0": [[ 2, -1, 1, "none" ]],
+      "90": [[ 1, 2, 1, "none" ]],
+      "180": [[ -2, 1, 1, "none" ]],
+      "270": [[ -1, -2, 1, "none" ]]
+    },
+    "rotatable": true
+  },
+  {
+    "id": "slate_4",
+    "name": "도래",
+    "rarity": "Common",
+    "condition": "none",
+    "icon": "slate_04.png",
+    "buffcoords": {
+      "0": [
+        [ 0, -2, -1, "none" ],
+        [ 0, -1, -1, "none" ],
+        [ 0, 1, 1, "none" ],
+        [ 0, 2, 1, "none" ]
+      ],
+      "90": [
+        [ 2, 0, -1, "none" ],
+        [ 1, 0, -1, "none" ],
+        [ -1, 0, 1, "none" ],
+        [ -2, 0, 1, "none" ]
+      ],
+      "180": [
+        [ 0, 2, -1, "none" ],
+        [ 0, 1, -1, "none" ],
+        [ 0, -1, 1, "none" ],
+        [ 0, -2, 1, "none" ]
+      ],
+      "270": [
+        [ -2, 0, -1, "none" ],
+        [ -1, 0, -1, "none" ],
+        [ 1, 0, 1, "none" ],
+        [ 2, 0, 1, "none" ]
+      ]
+    },
+    "rotatable": true
+  },
+  {
+    "id": "slate_5",
+    "name": "선의",
+    "rarity": "Common",
+    "condition": "bottom_row",
+    "icon": "slate_05.png",
+    "buffcoords": [
+      [ -1, 0, 1, "none" ],
+      [ 1, 0, 1, "none" ]
+    ],
+    "rotatable": false
+  },
+  {
+    "id": "slate_6",
+    "name": "시선",
+    "rarity": "Common",
+    "condition": "none",
+    "icon": "slate_06.png",
+    "buffcoords": {
+      "0": [
+        [ 1, -1, 1, "none" ],
+        [ -1, 1, -1, "none" ]
+      ],
+      "90": [
+        [ 1, 1, 1, "none" ],
+        [ -1, -1, -1, "none" ]
+      ],
+      "180": [
+        [ -1, 1, 1, "none" ],
+        [ 1, -1, -1, "none" ]
+      ],
+      "270": [
+        [ -1, -1, 1, "none" ],
+        [ 1, 1, -1, "none" ]
+      ]
+    },
+    "rotatable": true
+  },
+  {
+    "id": "slate_7",
+    "name": "악수",
+    "rarity": "Common",
+    "condition": "none",
+    "icon": "slate_07.png",
+    "buffcoords": {
+      "0": [
+        [ 0, -1, 1, "none" ],
+        [ 0, 1, 1, "none" ]
+      ],
+      "90": [
+        [ 1, 0, 1, "none" ],
+        [ -1, 0, 1, "none" ]
+      ],
+      "180": [
+        [ 0, 1, 1, "none" ],
+        [ 0, -1, 1, "none" ]
+      ],
+      "270": [
+        [ -1, 0, 1, "none" ],
+        [ 1, 0, 1, "none" ]
+      ]
+    },
+    "rotatable": true
+  },
+  {
+    "id": "slate_8",
+    "name": "운명",
+    "rarity": "Common",
+    "condition": "none",
+    "icon": "slate_08.png",
+    "buffcoords": [[ 0, 1, 1, "none" ]],
+    "rotatable": false
+  },
+  {
+    "id": "slate_9",
+    "name": "재치",
+    "rarity": "Common",
+    "condition": "none",
+    "icon": "slate_09.png",
+    "buffcoords": {
+      "0": [[ 1, -1, 1, "none" ]],
+      "90": [[ 1, 1, 1, "none" ]],
+      "180": [[ -1, 1, 1, "none" ]],
+      "270": [[ -1, -1, 1, "none" ]]
+    },
+    "rotatable": true
+  },
+  {
+    "id": "slate_10",
+    "name": "착취",
+    "rarity": "Common",
+    "condition": "none",
+    "icon": "slate_10.png",
+    "buffcoords": {
+      "0": [
+        [ 0, -1, -1, "none" ],
+        [ 0, 1, 1, "none" ]
+      ],
+      "90": [
+        [ 1, 0, -1, "none" ],
+        [ -1, 0, 1, "none" ]
+      ],
+      "180": [
+        [ 0, 1, -1, "none" ],
+        [ 0, -1, 1, "none" ]
+      ],
+      "270": [
+        [ -1, 0, -1, "none" ],
+        [ 1, 0, 1, "none" ]
+      ]
+    },
+    "rotatable": true
+  },
+  {
+    "id": "slate_11",
+    "name": "화합",
+    "rarity": "Common",
+    "condition": "none",
+    "icon": "slate_11.png",
+    "buffcoords": {
+      "0": [
+        [ 1, 0, -1, "none" ],
+        [ 0, -1, -1, "none" ],
+        [ 0, 1, 1, "none" ],
+        [ -1, 0, 1, "none" ]
+      ],
+      "90": [
+        [ 0, 1, -1, "none" ],
+        [ 1, 0, -1, "none" ],
+        [ -1, 0, 1, "none" ],
+        [ 0, -1, 1, "none" ]
+      ],
+      "180": [
+        [ -1, 0, -1, "none" ],
+        [ 0, 1, -1, "none" ],
+        [ 0, -1, 1, "none" ],
+        [ 1, 0, 1, "none" ]
+      ],
+      "270": [
+        [ 0, -1, -1, "none" ],
+        [ -1, 0, -1, "none" ],
+        [ 1, 0, 1, "none" ],
+        [ 0, 1, 1, "none" ]
+      ]
+    },
+    "rotatable": true
+  },
+  {
+    "id": "slate_12",
+    "name": "환호",
+    "rarity": "Common",
+    "condition": "none",
+    "icon": "slate_12.png",
+    "buffcoords": [[ 0, -1, 1, "none" ]],
+    "rotatable": false
+  },
+  {
+    "id": "slate_13",
+    "name": "희망",
+    "rarity": "Common",
+    "condition": "none",
+    "icon": "slate_13.png",
+    "buffcoords": {
+      "0": [[ 0, -1, 1, "none" ]],
+      "90": [[ -1, 0, 1, "none" ]],
+      "180": [[ 0, 1, 1, "none" ]],
+      "270": [[ 1, 0, 1, "none" ]]
+    },
+    "rotatable": true
+  },
+  {
+    "id": "slate_14",
+    "name": "경쟁",
+    "rarity": "UnCommon",
+    "condition": "none",
+    "icon": "slate_14.png",
+    "buffcoords": {
+      "0": [
+        [ 1, 1, -1, "none" ],
+        [ 0, -1, 2, "none" ],
+        [ -1, 1, -1, "none" ]
+      ],
+      "90": [
+        [ -1, 1, -1, "none" ],
+        [ 1, 0, 2, "none" ],
+        [ -1, -1, -1, "none" ]
+      ],
+      "180": [
+        [ -1, -1, -1, "none" ],
+        [ 0, 1, 2, "none" ],
+        [ 1, -1, -1, "none" ]
+      ],
+      "270": [
+        [ 1, -1, -1, "none" ],
+        [ -1, 0, 2, "none" ],
+        [ 1, 1, -1, "none" ]
+      ]
+    },
+    "rotatable": true
+  },
+  {
+    "id": "slate_15",
+    "name": "고동",
+    "rarity": "UnCommon",
+    "condition": "none",
+    "icon": "slate_15.png",
+    "buffcoords": {
+      "0": [[ 0, -2, 2, "none" ]],
+      "90": [[ -2, 0, 2, "none" ]],
+      "180": [[ 0, 2, 2, "none" ]],
+      "270": [[ 2, 0, 2, "none" ]]
+    },
+    "rotatable": true
+  },
+  {
+    "id": "slate_16",
+    "name": "고양",
+    "rarity": "UnCommon",
+    "condition": "none",
+    "icon": "slate_16.png",
+    "buffcoords": {
+      "0": [[ 0, -1, 0, "limitUnlock" ]],
+      "90": [[ -1, 0, 0, "limitUnlock" ]],
+      "180": [[ 0, 1, 0, "limitUnlock" ]],
+      "270": [[ 1, 0, 0, "limitUnlock" ]]
+    },
+    "rotatable": true
+  },
+  {
+    "id": "slate_17",
+    "name": "과거",
+    "rarity": "UnCommon",
+    "condition": "none",
+    "icon": "slate_17.png",
+    "buffcoords": {
+      "0": [
+        [ 1, 1, 1, "none" ],
+        [ 1, 0, 1, "none" ],
+        [ 1, -1, 1, "none" ],
+        [ 0, -1, 1, "none" ]
+      ],
+      "90": [
+        [ -1, 1, 1, "none" ],
+        [ 0, 1, 1, "none" ],
+        [ 1, 1, 1, "none" ],
+        [ 1, 0, 1, "none" ]
+      ],
+      "180": [
+        [ -1, -1, 1, "none" ],
+        [ -1, 0, 1, "none" ],
+        [ -1, 1, 1, "none" ],
+        [ 0, 1, 1, "none" ]
+      ],
+      "270": [
+        [ 1, -1, 1, "none" ],
+        [ 0, -1, 1, "none" ],
+        [ -1, -1, 1, "none" ],
+        [ -1, 0, 1, "none" ]
+      ]
+    },
+    "rotatable": true
+  },
+  {
+    "id": "slate_18",
+    "name": "미래",
+    "rarity": "UnCommon",
+    "condition": "none",
+    "icon": "slate_18.png",
+    "buffcoords": {
+      "0": [
+        [ 1, 1, 1, "none" ],
+        [ 1, 0, 1, "none" ],
+        [ 1, -1, 1, "none" ],
+        [ 0, 1, 1, "none" ]
+      ],
+      "90": [
+        [ -1, 1, 1, "none" ],
+        [ 0, 1, 1, "none" ],
+        [ 1, 1, 1, "none" ],
+        [ -1, 0, 1, "none" ]
+      ],
+      "180": [
+        [ -1, -1, 1, "none" ],
+        [ -1, 0, 1, "none" ],
+        [ -1, 1, 1, "none" ],
+        [ 0, -1, 1, "none" ]
+      ],
+      "270": [
+        [ 1, -1, 1, "none" ],
+        [ 0, -1, 1, "none" ],
+        [ -1, -1, 1, "none" ],
+        [ 1, 0, 1, "none" ]
+      ]
+    },
+    "rotatable": true
+  },
+  {
+    "id": "slate_19",
+    "name": "분배",
+    "rarity": "UnCommon",
+    "condition": "none",
+    "icon": "slate_19.png",
+    "buffcoords": {
+      "0": [
+        [ 1, 0, 1, "none" ],
+        [ 0, 1, 1, "none" ],
+        [ -1, 0, 1, "none" ],
+        [ 0, -1, 1, "none" ]
+      ],
+      "90": [
+        [ 0, 1, 1, "none" ],
+        [ -1, 0, 1, "none" ],
+        [ 0, -1, 1, "none" ],
+        [ 1, 0, 1, "none" ]
+      ],
+      "180": [
+        [ -1, 0, 1, "none" ],
+        [ 0, -1, 1, "none" ],
+        [ 1, 0, 1, "none" ],
+        [ 0, 1, 1, "none" ]
+      ],
+      "270": [
+        [ 0, -1, 1, "none" ],
+        [ 1, 0, 1, "none" ],
+        [ 0, 1, 1, "none" ],
+        [ -1, 0, 1, "none" ]
+      ]
+    },
+    "rotatable": true
+  },
+  {
+    "id": "slate_20",
+    "name": "삼두",
+    "rarity": "UnCommon",
+    "condition": "none",
+    "icon": "slate_20.png",
+    "buffcoords": [
+      [ 0, -1, 1, "none" ],
+      [ -1, 0, 1, "none" ],
+      [ 1, 0, 1, "none" ]
+    ],
+    "rotatable": false
+  },
+  {
+    "id": "slate_21",
+    "name": "수확",
+    "rarity": "UnCommon",
+    "condition": "none",
+    "icon": "slate_21.png",
+    "buffcoords": {
+      "0": [
+        [ 0, -1, 2, "none" ],
+        [ 0, 1, 2, "none" ]
+      ],
+      "90": [
+        [ 1, 0, 2, "none" ],
+        [ -1, 0, 2, "none" ]
+      ],
+      "180": [
+        [ 0, 1, 2, "none" ],
+        [ 0, -1, 2, "none" ]
+      ],
+      "270": [
+        [ -1, 0, 2, "none" ],
+        [ 1, 0, 2, "none" ]
+      ]
+    },
+    "rotatable": true
+  },
+  {
+    "id": "slate_22",
+    "name": "쌍성",
+    "rarity": "UnCommon",
+    "condition": "none",
+    "icon": "slate_22.png",
+    "buffcoords": {
+      "0": [
+        [ 0, -2, 2, "none" ],
+        [ 0, 2, 2, "none" ]
+      ],
+      "90": [
+        [ 2, 0, 2, "none" ],
+        [ -2, 0, 2, "none" ]
+      ],
+      "180": [
+        [ 0, 2, 2, "none" ],
+        [ 0, -2, 2, "none" ]
+      ],
+      "270": [
+        [ -2, 0, 2, "none" ],
+        [ 2, 0, 2, "none" ]
+      ]
+    },
+    "rotatable": true
+  },
+  {
+    "id": "slate_23",
+    "name": "양육",
+    "rarity": "UnCommon",
+    "condition": "none",
+    "icon": "slate_23.png",
+    "buffcoords": {
+      "0": [
+        [ 1, 1, 1, "none" ],
+        [ 0, -2, -1, "none" ],
+        [ 0, -1, -1, "none" ],
+        [ 0, 1, 1, "none" ],
+        [ -1, 1, 1, "none" ]
+      ],
+      "90": [
+        [ -1, 1, 1, "none" ],
+        [ 2, 0, -1, "none" ],
+        [ 1, 0, -1, "none" ],
+        [ -1, 0, 1, "none" ],
+        [ -1, -1, 1, "none" ]
+      ],
+      "180": [
+        [ -1, -1, 1, "none" ],
+        [ 0, 2, -1, "none" ],
+        [ 0, 1, -1, "none" ],
+        [ 0, -1, 1, "none" ],
+        [ 1, -1, 1, "none" ]
+      ],
+      "270": [
+        [ 1, -1, 1, "none" ],
+        [ -2, 0, -1, "none" ],
+        [ -1, 0, -1, "none" ],
+        [ 1, 0, 1, "none" ],
+        [ 1, 1, 1, "none" ]
+      ]
+    },
+    "rotatable": true
+  },
+  {
+    "id": "slate_24",
+    "name": "열망",
+    "rarity": "UnCommon",
+    "condition": "none",
+    "icon": "slate_24.png",
+    "buffcoords": [[ 0, -1, 2, "none" ]],
+    "rotatable": false
+  },
+  {
+    "id": "slate_25",
+    "name": "응집",
+    "rarity": "UnCommon",
+    "condition": "none",
+    "icon": "slate_25.png",
+    "buffcoords": {
+      "0": [
+        [ -1, 0, 3, "none" ],
+        [ 0, -6, -1, "none" ],
+        [ 0, -5, -1, "none" ],
+        [ 0, -4, -1, "none" ],
+        [ 0, -3, -1, "none" ],
+        [ 0, -2, -1, "none" ],
+        [ 0, -1, -1, "none" ],
+        [ 0, 1, -1, "none" ],
+        [ 0, 2, -1, "none" ],
+        [ 0, 3, -1, "none" ],
+        [ 0, 4, -1, "none" ],
+        [ 0, 5, -1, "none" ],
+        [ 0, 6, -1, "none" ]
+      ],
+      "90": [
+        [ 0, -1, 3, "none" ],
+        [ 6, 0, -1, "none" ],
+        [ 5, 0, -1, "none" ],
+        [ 4, 0, -1, "none" ],
+        [ 3, 0, -1, "none" ],
+        [ 2, 0, -1, "none" ],
+        [ 1, 0, -1, "none" ],
+        [ -1, 0, -1, "none" ],
+        [ -2, 0, -1, "none" ],
+        [ -3, 0, -1, "none" ],
+        [ -4, 0, -1, "none" ],
+        [ -5, 0, -1, "none" ],
+        [ -6, 0, -1, "none" ]
+      ],
+      "180": [
+        [ 1, 0, 3, "none" ],
+        [ 0, 6, -1, "none" ],
+        [ 0, 5, -1, "none" ],
+        [ 0, 4, -1, "none" ],
+        [ 0, 3, -1, "none" ],
+        [ 0, 2, -1, "none" ],
+        [ 0, 1, -1, "none" ],
+        [ 0, -1, -1, "none" ],
+        [ 0, -2, -1, "none" ],
+        [ 0, -3, -1, "none" ],
+        [ 0, -4, -1, "none" ],
+        [ 0, -5, -1, "none" ],
+        [ 0, -6, -1, "none" ]
+      ],
+      "270": [
+        [ 0, 1, 3, "none" ],
+        [ -6, 0, -1, "none" ],
+        [ -5, 0, -1, "none" ],
+        [ -4, 0, -1, "none" ],
+        [ -3, 0, -1, "none" ],
+        [ -2, 0, -1, "none" ],
+        [ -1, 0, -1, "none" ],
+        [ 1, 0, -1, "none" ],
+        [ 2, 0, -1, "none" ],
+        [ 3, 0, -1, "none" ],
+        [ 4, 0, -1, "none" ],
+        [ 5, 0, -1, "none" ],
+        [ 6, 0, -1, "none" ]
+      ]
+    },
+    "rotatable": true
+  },
+  {
+    "id": "slate_26",
+    "name": "입구",
+    "rarity": "UnCommon",
+    "condition": "none",
+    "icon": "slate_26.png",
+    "buffcoords": [
+      [ -1, -1, 1, "none" ],
+      [ 0, -1, 2, "none" ],
+      [ 1, -1, 1, "none" ]
+    ],
+    "rotatable": false
+  },
+  {
+    "id": "slate_27",
+    "name": "장난",
+    "rarity": "UnCommon",
+    "condition": "none",
+    "icon": "slate_27.png",
+    "buffcoords": {
+      "0": [
+        [ 1, -1, 1, "none" ],
+        [ 0, -1, 1, "none" ],
+        [ -1, -1, 1, "none" ],
+        [ 1, 0, -1, "none" ],
+        [ -1, 0, -1, "none" ]
+      ],
+      "90": [
+        [ -1, -1, 1, "none" ],
+        [ -1, 0, 1, "none" ],
+        [ -1, 1, 1, "none" ],
+        [ 0, -1, -1, "none" ],
+        [ 0, 1, -1, "none" ]
+      ],
+      "180": [
+        [ -1, 1, 1, "none" ],
+        [ 0, 1, 1, "none" ],
+        [ 1, 1, 1, "none" ],
+        [ -1, 0, -1, "none" ],
+        [ 1, 0, -1, "none" ]
+      ],
+      "270": [
+        [ 1, 1, 1, "none" ],
+        [ 1, 0, 1, "none" ],
+        [ 1, -1, 1, "none" ],
+        [ 0, 1, -1, "none" ],
+        [ 0, -1, -1, "none" ]
+      ]
+    },
+    "rotatable": true
+  },
+  {
+    "id": "slate_28",
+    "name": "적재",
+    "rarity": "UnCommon",
+    "condition": "none",
+    "icon": "slate_28.png",
+    "buffcoords": {
+      "0": [
+        [ 0, 2, 1, "none" ],
+        [ 0, 1, 1, "none" ],
+        [ 1, 2, 1, "none" ],
+        [ 1, 1, 1, "none" ]
+      ],
+      "90": [
+        [ -2, 0, 1, "none" ],
+        [ -1, 0, 1, "none" ],
+        [ -2, -1, 1, "none" ],
+        [ -1, -1, 1, "none" ]
+      ],
+      "180": [
+        [ 0, -2, 1, "none" ],
+        [ 0, -1, 1, "none" ],
+        [ -1, -2, 1, "none" ],
+        [ -1, -1, 1, "none" ]
+      ],
+      "270": [
+        [ 2, 0, 1, "none" ],
+        [ 1, 0, 1, "none" ],
+        [ 2, 1, 1, "none" ],
+        [ 1, 1, 1, "none" ]
+      ]
+    },
+    "rotatable": true
+  },
+  {
+    "id": "slate_29",
+    "name": "전이",
+    "rarity": "UnCommon",
+    "condition": "none",
+    "icon": "slate_29.png",
+    "buffcoords": {
+      "0": [
+        [ 1, 0, -1, "none" ],
+        [ 2, 0, -1, "none" ],
+        [ 3, 0, -1, "none" ],
+        [ 4, 0, -1, "none" ],
+        [ 5, 0, -1, "none" ],
+        [ 6, 0, -1, "none" ],
+        [ 0, -1, 1, "none" ],
+        [ 0, -2, 1, "none" ],
+        [ 0, -3, 1, "none" ],
+        [ 0, -4, 1, "none" ],
+        [ 0, -5, 1, "none" ],
+        [ 0, -6, 1, "none" ],
+        [ 0, 1, 1, "none" ],
+        [ 0, 2, 1, "none" ],
+        [ 0, 3, 1, "none" ],
+        [ 0, 4, 1, "none" ],
+        [ 0, 5, 1, "none" ],
+        [ 0, 6, 1, "none" ],
+        [ -1, 0, -1, "none" ],
+        [ -2, 0, -1, "none" ],
+        [ -3, 0, -1, "none" ],
+        [ -4, 0, -1, "none" ],
+        [ -5, 0, -1, "none" ],
+        [ -6, 0, -1, "none" ]
+      ],
+      "90": [
+        [ 0, 1, -1, "none" ],
+        [ 0, 2, -1, "none" ],
+        [ 0, 3, -1, "none" ],
+        [ 0, 4, -1, "none" ],
+        [ 0, 5, -1, "none" ],
+        [ 0, 6, -1, "none" ],
+        [ 1, 0, 1, "none" ],
+        [ 2, 0, 1, "none" ],
+        [ 3, 0, 1, "none" ],
+        [ 4, 0, 1, "none" ],
+        [ 5, 0, 1, "none" ],
+        [ 6, 0, 1, "none" ],
+        [ -1, 0, 1, "none" ],
+        [ -2, 0, 1, "none" ],
+        [ -3, 0, 1, "none" ],
+        [ -4, 0, 1, "none" ],
+        [ -5, 0, 1, "none" ],
+        [ -6, 0, 1, "none" ],
+        [ 0, -1, -1, "none" ],
+        [ 0, -2, -1, "none" ],
+        [ 0, -3, -1, "none" ],
+        [ 0, -4, -1, "none" ],
+        [ 0, -5, -1, "none" ],
+        [ 0, -6, -1, "none" ]
+      ],
+      "180": [
+        [ -1, 0, -1, "none" ],
+        [ -2, 0, -1, "none" ],
+        [ -3, 0, -1, "none" ],
+        [ -4, 0, -1, "none" ],
+        [ -5, 0, -1, "none" ],
+        [ -6, 0, -1, "none" ],
+        [ 0, 1, 1, "none" ],
+        [ 0, 2, 1, "none" ],
+        [ 0, 3, 1, "none" ],
+        [ 0, 4, 1, "none" ],
+        [ 0, 5, 1, "none" ],
+        [ 0, 6, 1, "none" ],
+        [ 0, -1, 1, "none" ],
+        [ 0, -2, 1, "none" ],
+        [ 0, -3, 1, "none" ],
+        [ 0, -4, 1, "none" ],
+        [ 0, -5, 1, "none" ],
+        [ 0, -6, 1, "none" ],
+        [ 1, 0, -1, "none" ],
+        [ 2, 0, -1, "none" ],
+        [ 3, 0, -1, "none" ],
+        [ 4, 0, -1, "none" ],
+        [ 5, 0, -1, "none" ],
+        [ 6, 0, -1, "none" ]
+      ],
+      "270": [
+        [ 0, -1, -1, "none" ],
+        [ 0, -2, -1, "none" ],
+        [ 0, -3, -1, "none" ],
+        [ 0, -4, -1, "none" ],
+        [ 0, -5, -1, "none" ],
+        [ 0, -6, -1, "none" ],
+        [ -1, 0, 1, "none" ],
+        [ -2, 0, 1, "none" ],
+        [ -3, 0, 1, "none" ],
+        [ -4, 0, 1, "none" ],
+        [ -5, 0, 1, "none" ],
+        [ -6, 0, 1, "none" ],
+        [ 1, 0, 1, "none" ],
+        [ 2, 0, 1, "none" ],
+        [ 3, 0, 1, "none" ],
+        [ 4, 0, 1, "none" ],
+        [ 5, 0, 1, "none" ],
+        [ 6, 0, 1, "none" ],
+        [ 0, 1, -1, "none" ],
+        [ 0, 2, -1, "none" ],
+        [ 0, 3, -1, "none" ],
+        [ 0, 4, -1, "none" ],
+        [ 0, 5, -1, "none" ],
+        [ 0, 6, -1, "none" ]
+      ]
+    },
+    "rotatable": true
+  },
+  {
+    "id": "slate_30",
+    "name": "전진",
+    "rarity": "UnCommon",
+    "condition": "none",
+    "icon": "slate_30.png",
+    "buffcoords": {
+      "0": [
+        [ 0, -1, 1, "none" ],
+        [ 0, -2, 1, "none" ],
+        [ 0, -3, 1, "none" ]
+      ],
+      "90": [
+        [ -1, 0, 1, "none" ],
+        [ -2, 0, 1, "none" ],
+        [ -3, 0, 1, "none" ]
+      ],
+      "180": [
+        [ 0, 1, 1, "none" ],
+        [ 0, 2, 1, "none" ],
+        [ 0, 3, 1, "none" ]
+      ],
+      "270": [
+        [ 1, 0, 1, "none" ],
+        [ 2, 0, 1, "none" ],
+        [ 3, 0, 1, "none" ]
+      ]
+    },
+    "rotatable": true
+  },
+  {
+    "id": "slate_31",
+    "name": "정의",
+    "rarity": "UnCommon",
+    "condition": "horizontal_ends",
+    "icon": "slate_31.png",
+    "buffcoords": [
+      [ 0, -6, 1, "none" ],
+      [ 0, -5, 1, "none" ],
+      [ 0, -4, 1, "none" ],
+      [ 0, -3, 1, "none" ],
+      [ 0, -2, 1, "none" ],
+      [ 0, -1, 1, "none" ],
+      [ 0, 1, 1, "none" ],
+      [ 0, 2, 1, "none" ],
+      [ 0, 3, 1, "none" ],
+      [ 0, 4, 1, "none" ],
+      [ 0, 5, 1, "none" ],
+      [ 0, 6, 1, "none" ]
+    ],
+    "rotatable": false
+  },
+  {
+    "id": "slate_32",
+    "name": "준비",
+    "rarity": "UnCommon",
+    "condition": "none",
+    "icon": "slate_32.png",
+    "buffcoords": {
+      "0": [
+        [ 1, -1, 1, "none" ],
+        [ -1, 1, 1, "none" ]
+      ],
+      "90": [
+        [ 1, 1, 1, "none" ],
+        [ -1, -1, 1, "none" ]
+      ],
+      "180": [
+        [ -1, 1, 1, "none" ],
+        [ 1, -1, 1, "none" ]
+      ],
+      "270": [
+        [ -1, -1, 1, "none" ],
+        [ 1, 1, 1, "none" ]
+      ]
+    },
+    "rotatable": true
+  },
+  {
+    "id": "slate_33",
+    "name": "파도",
+    "rarity": "UnCommon",
+    "condition": "none",
+    "icon": "slate_33.png",
+    "buffcoords": {
+      "0": [
+        [ 1, -1, 2, "none" ],
+        [ 0, -1, -1, "none" ],
+        [ 1, 0, -1, "none" ]
+      ],
+      "90": [
+        [ 1, 1, 2, "none" ],
+        [ 1, 0, -1, "none" ],
+        [ 0, 1, -1, "none" ]
+      ],
+      "180": [
+        [ -1, 1, 2, "none" ],
+        [ 0, 1, -1, "none" ],
+        [ -1, 0, -1, "none" ]
+      ],
+      "270": [
+        [ -1, -1, 2, "none" ],
+        [ -1, 0, -1, "none" ],
+        [ 0, -1, -1, "none" ]
+      ]
+    },
+    "rotatable": true
+  },
+  {
+    "id": "slate_34",
+    "name": "헌정",
+    "rarity": "UnCommon",
+    "condition": "none",
+    "icon": "slate_34.png",
+    "buffcoords": {
+      "0": [
+        [ 1, -1, 1, "none" ],
+        [ -1, -1, 1, "none" ],
+        [ 1, 1, 1, "none" ],
+        [ -1, 1, 1, "none" ]
+      ],
+      "90": [
+        [ 1, 1, 1, "none" ],
+        [ 1, -1, 1, "none" ],
+        [ -1, 1, 1, "none" ],
+        [ -1, -1, 1, "none" ]
+      ],
+      "180": [
+        [ -1, 1, 1, "none" ],
+        [ 1, 1, 1, "none" ],
+        [ -1, -1, 1, "none" ],
+        [ 1, -1, 1, "none" ]
+      ],
+      "270": [
+        [ -1, -1, 1, "none" ],
+        [ -1, 1, 1, "none" ],
+        [ 1, -1, 1, "none" ],
+        [ 1, 1, 1, "none" ]
+      ]
+    },
+    "rotatable": true
+  },
+  {
+    "id": "slate_35",
+    "name": "기반",
+    "rarity": "Rare",
+    "condition": "none",
+    "icon": "slate_35.png",
+    "buffcoords": [
+      [ -6, 0, 1, "none" ],
+      [ -5, 0, 1, "none" ],
+      [ -4, 0, 1, "none" ],
+      [ -3, 0, 1, "none" ],
+      [ -2, 0, 1, "none" ],
+      [ -1, 0, 1, "none" ],
+      [ 1, 0, 1, "none" ],
+      [ 2, 0, 1, "none" ],
+      [ 3, 0, 1, "none" ],
+      [ 4, 0, 1, "none" ],
+      [ 5, 0, 1, "none" ],
+      [ 6, 0, 1, "none" ]
+    ],
+    "rotatable": false
+  },
+  {
+    "id": "slate_36",
+    "name": "권능",
+    "rarity": "Rare",
+    "condition": "none",
+    "icon": "slate_36.png",
+    "buffcoords": {
+      "0": [[ 0, -1, 3, "none" ]],
+      "90": [[ -1, 0, 3, "none" ]],
+      "180": [[ 0, 1, 3, "none" ]],
+      "270": [[ 1, 0, 3, "none" ]]
+    },
+    "rotatable": true
+  },
+  {
+    "id": "slate_37",
+    "name": "단절",
+    "rarity": "Rare",
+    "condition": "none",
+    "icon": "slate_37.png",
+    "buffcoords": [
+      [ 0, -1, 3, "none" ],
+      [ -1, 0, -1, "none" ],
+      [ 1, 0, -1, "none" ],
+      [ 0, 1, 3, "none" ]
+    ],
+    "rotatable": false
+  },
+  {
+    "id": "slate_38",
+    "name": "동시성",
+    "rarity": "Rare",
+    "condition": "none",
+    "icon": "slate_38.png",
+    "buffcoords": [
+      [ 0, -6, 1, "none" ],
+      [ 0, -5, 1, "none" ],
+      [ 0, -4, 1, "none" ],
+      [ 0, -3, 1, "none" ],
+      [ 0, -2, 1, "none" ],
+      [ 0, -1, 1, "none" ],
+      [ 0, 1, 1, "none" ],
+      [ 0, 2, 1, "none" ],
+      [ 0, 3, 1, "none" ],
+      [ 0, 4, 1, "none" ],
+      [ 0, 5, 1, "none" ],
+      [ 0, 6, 1, "none" ]
+    ],
+    "rotatable": false
+  },
+  {
+    "id": "slate_39",
+    "name": "맹세",
+    "rarity": "Rare",
+    "condition": "none",
+    "icon": "slate_39.png",
+    "buffcoords": {
+      "0": [
+        [ 0, 2, 2, "none" ],
+        [ 0, 1, 1, "none" ],
+        [ -1, 0, 1, "none" ],
+        [ 1, 0, 1, "none" ],
+        [ 0, -1, 1, "none" ]
+      ],
+      "90": [
+        [ -2, 0, 2, "none" ],
+        [ -1, 0, 1, "none" ],
+        [ 0, -1, 1, "none" ],
+        [ 0, 1, 1, "none" ],
+        [ 1, 0, 1, "none" ]
+      ],
+      "180": [
+        [ 0, -2, 2, "none" ],
+        [ 0, -1, 1, "none" ],
+        [ 1, 0, 1, "none" ],
+        [ -1, 0, 1, "none" ],
+        [ 0, 1, 1, "none" ]
+      ],
+      "270": [
+        [ 2, 0, 2, "none" ],
+        [ 1, 0, 1, "none" ],
+        [ 0, 1, 1, "none" ],
+        [ 0, -1, 1, "none" ],
+        [ -1, 0, 1, "none" ]
+      ]
+    },
+    "rotatable": true
+  },
+  {
+    "id": "slate_40",
+    "name": "반항",
+    "rarity": "Rare",
+    "condition": "none",
+    "icon": "slate_40.png",
+    "buffcoords": {
+      "0": [
+        [ 6, 6, 1, "none" ],
+        [ 5, 5, 1, "none" ],
+        [ 4, 4, 1, "none" ],
+        [ 3, 3, 1, "none" ],
+        [ 2, 2, 1, "none" ],
+        [ 1, 1, 1, "none" ],
+        [ -1, -1, 1, "none" ],
+        [ -2, -2, 1, "none" ],
+        [ -3, -3, 1, "none" ],
+        [ -4, -4, 1, "none" ],
+        [ -5, -5, 1, "none" ],
+        [ -6, -6, 1, "none" ]
+      ],
+      "90": [
+        [ -6, 6, 1, "none" ],
+        [ -5, 5, 1, "none" ],
+        [ -4, 4, 1, "none" ],
+        [ -3, 3, 1, "none" ],
+        [ -2, 2, 1, "none" ],
+        [ -1, 1, 1, "none" ],
+        [ 1, -1, 1, "none" ],
+        [ 2, -2, 1, "none" ],
+        [ 3, -3, 1, "none" ],
+        [ 4, -4, 1, "none" ],
+        [ 5, -5, 1, "none" ],
+        [ 6, -6, 1, "none" ]
+      ],
+      "180": [
+        [ -6, -6, 1, "none" ],
+        [ -5, -5, 1, "none" ],
+        [ -4, -4, 1, "none" ],
+        [ -3, -3, 1, "none" ],
+        [ -2, -2, 1, "none" ],
+        [ -1, -1, 1, "none" ],
+        [ 1, 1, 1, "none" ],
+        [ 2, 2, 1, "none" ],
+        [ 3, 3, 1, "none" ],
+        [ 4, 4, 1, "none" ],
+        [ 5, 5, 1, "none" ],
+        [ 6, 6, 1, "none" ]
+      ],
+      "270": [
+        [ 6, -6, 1, "none" ],
+        [ 5, -5, 1, "none" ],
+        [ 4, -4, 1, "none" ],
+        [ 3, -3, 1, "none" ],
+        [ 2, -2, 1, "none" ],
+        [ 1, -1, 1, "none" ],
+        [ -1, 1, 1, "none" ],
+        [ -2, 2, 1, "none" ],
+        [ -3, 3, 1, "none" ],
+        [ -4, 4, 1, "none" ],
+        [ -5, 5, 1, "none" ],
+        [ -6, 6, 1, "none" ]
+      ]
+    },
+    "rotatable": true
+  },
+  {
+    "id": "slate_41",
+    "name": "이음",
+    "rarity": "Rare",
+    "condition": "none",
+    "icon": "slate_41.png",
+    "buffcoords": {
+      "0": [
+        [ 0, 1, 2, "none" ],
+        [ 0, -1, 0, "limitUnlock" ]
+      ],
+      "90": [
+        [ -1, 0, 2, "none" ],
+        [ 1, 0, 0, "limitUnlock" ]
+      ],
+      "180": [
+        [ 0, -1, 2, "none" ],
+        [ 0, 1, 0, "limitUnlock" ]
+      ],
+      "270": [
+        [ 1, 0, 2, "none" ],
+        [ -1, 0, 0, "limitUnlock" ]
+      ]
+    },
+    "rotatable": true
+  },
+  {
+    "id": "slate_42",
+    "name": "차양",
+    "rarity": "Rare",
+    "condition": "top_row",
+    "icon": "slate_42.png",
+    "buffcoords": [
+      [ -6, 6, 1, "downside" ],
+      [ -5, 6, 1, "downside" ],
+      [ -4, 6, 1, "downside" ],
+      [ -3, 6, 1, "downside" ],
+      [ -2, 6, 1, "downside" ],
+      [ -1, 6, 1, "downside" ],
+      [ 0, 6, 1, "downside" ],
+      [ 1, 6, 1, "downside" ],
+      [ 2, 6, 1, "downside" ],
+      [ 3, 6, 1, "downside" ],
+      [ 4, 6, 1, "downside" ],
+      [ 5, 6, 1, "downside" ],
+      [ 6, 6, 1, "downside" ]
+    ],
+    "rotatable": false
+  },
+  {
+    "id": "slate_43",
+    "name": "가시",
+    "rarity": "Legendary",
+    "condition": "none",
+    "icon": "slate_43.png",
+    "buffcoords": [
+      [ -1, -1, 1, "none" ],
+      [ 0, -1, 2, "none" ],
+      [ 1, -1, 1, "none" ],
+      [ -1, 0, 1, "none" ],
+      [ 1, 0, 1, "none" ],
+      [ -1, 1, 1, "none" ],
+      [ 0, 1, 2, "none" ],
+      [ 1, 1, 1, "none" ]
+    ],
+    "rotatable": false
+  },
+  {
+    "id": "slate_44",
+    "name": "경계",
+    "rarity": "Legendary",
+    "condition": "none",
+    "icon": "slate_44.png",
+    "buffcoords": [
+      [ -6, -6, 1, "edge" ],
+      [ -5, -6, 1, "edge" ],
+      [ -4, -6, 1, "edge" ],
+      [ -3, -6, 1, "edge" ],
+      [ -2, -6, 1, "edge" ],
+      [ -1, -6, 1, "edge" ],
+      [ 0, -6, 1, "edge" ],
+      [ 1, -6, 1, "edge" ],
+      [ 2, -6, 1, "edge" ],
+      [ 3, -6, 1, "edge" ],
+      [ 4, -6, 1, "edge" ],
+      [ 5, -6, 1, "edge" ],
+      [ 6, -6, 1, "edge" ],
+      [ -6, 6, 1, "edge" ],
+      [ -5, 6, 1, "edge" ],
+      [ -4, 6, 1, "edge" ],
+      [ -3, 6, 1, "edge" ],
+      [ -2, 6, 1, "edge" ],
+      [ -1, 6, 1, "edge" ],
+      [ 0, 6, 1, "edge" ],
+      [ 1, 6, 1, "edge" ],
+      [ 2, 6, 1, "edge" ],
+      [ 3, 6, 1, "edge" ],
+      [ 4, 6, 1, "edge" ],
+      [ 5, 6, 1, "edge" ],
+      [ 6, 6, 1, "edge" ]
+    ],
+    "rotatable": false
+  },
+  {
+    "id": "slate_45",
+    "name": "광휘",
+    "rarity": "Legendary",
+    "condition": "none",
+    "icon": "slate_45.png",
+    "buffcoords": {
+      "0": [
+        [ 1, 0, 2, "none" ],
+        [ 0, -6, 1, "none" ],
+        [ 0, -5, 1, "none" ],
+        [ 0, -4, 1, "none" ],
+        [ 0, -3, 1, "none" ],
+        [ 0, -2, 1, "none" ],
+        [ 0, -1, 1, "none" ],
+        [ 0, 1, 1, "none" ],
+        [ 0, 2, 1, "none" ],
+        [ 0, 3, 1, "none" ],
+        [ 0, 4, 1, "none" ],
+        [ 0, 5, 1, "none" ],
+        [ 0, 6, 1, "none" ],
+        [ -1, 0, 2, "none" ]
+      ],
+      "90": [
+        [ 0, 1, 2, "none" ],
+        [ 6, 0, 1, "none" ],
+        [ 5, 0, 1, "none" ],
+        [ 4, 0, 1, "none" ],
+        [ 3, 0, 1, "none" ],
+        [ 2, 0, 1, "none" ],
+        [ 1, 0, 1, "none" ],
+        [ -1, 0, 1, "none" ],
+        [ -2, 0, 1, "none" ],
+        [ -3, 0, 1, "none" ],
+        [ -4, 0, 1, "none" ],
+        [ -5, 0, 1, "none" ],
+        [ -6, 0, 1, "none" ],
+        [ 0, -1, 2, "none" ]
+      ],
+      "180": [
+        [ -1, 0, 2, "none" ],
+        [ 0, 6, 1, "none" ],
+        [ 0, 5, 1, "none" ],
+        [ 0, 4, 1, "none" ],
+        [ 0, 3, 1, "none" ],
+        [ 0, 2, 1, "none" ],
+        [ 0, 1, 1, "none" ],
+        [ 0, -1, 1, "none" ],
+        [ 0, -2, 1, "none" ],
+        [ 0, -3, 1, "none" ],
+        [ 0, -4, 1, "none" ],
+        [ 0, -5, 1, "none" ],
+        [ 0, -6, 1, "none" ],
+        [ 1, 0, 2, "none" ]
+      ],
+      "270": [
+        [ 0, -1, 2, "none" ],
+        [ -6, 0, 1, "none" ],
+        [ -5, 0, 1, "none" ],
+        [ -4, 0, 1, "none" ],
+        [ -3, 0, 1, "none" ],
+        [ -2, 0, 1, "none" ],
+        [ -1, 0, 1, "none" ],
+        [ 1, 0, 1, "none" ],
+        [ 2, 0, 1, "none" ],
+        [ 3, 0, 1, "none" ],
+        [ 4, 0, 1, "none" ],
+        [ 5, 0, 1, "none" ],
+        [ 6, 0, 1, "none" ],
+        [ 0, 1, 2, "none" ]
+      ]
+    },
+    "rotatable": true
+  },
+  {
+    "id": "slate_46",
+    "name": "기적",
+    "rarity": "Legendary",
+    "condition": "none",
+    "icon": "slate_46.png",
+    "buffcoords": {
+      "0": [
+        [ 0, -6, 1, "none" ],
+        [ 0, -5, 1, "none" ],
+        [ 0, -4, 1, "none" ],
+        [ 0, -3, 1, "none" ],
+        [ 0, -2, 1, "none" ],
+        [ 0, -1, 1, "none" ],
+        [ 1, 0, 1, "none" ],
+        [ 2, 0, 1, "none" ],
+        [ 3, 0, 1, "none" ],
+        [ 4, 0, 1, "none" ],
+        [ 5, 0, 1, "none" ],
+        [ 6, 0, 1, "none" ],
+        [ -1, 0, 1, "none" ],
+        [ -2, 0, 1, "none" ],
+        [ -3, 0, 1, "none" ],
+        [ -4, 0, 1, "none" ],
+        [ -5, 0, 1, "none" ],
+        [ -6, 0, 1, "none" ],
+        [ 0, 1, 1, "none" ],
+        [ 0, 2, 1, "none" ],
+        [ 0, 3, 1, "none" ],
+        [ 0, 4, 1, "none" ],
+        [ 0, 5, 1, "none" ],
+        [ 0, 6, 1, "none" ]
+      ],
+      "90": [
+        [ 6, 0, 1, "none" ],
+        [ 5, 0, 1, "none" ],
+        [ 4, 0, 1, "none" ],
+        [ 3, 0, 1, "none" ],
+        [ 2, 0, 1, "none" ],
+        [ 1, 0, 1, "none" ],
+        [ 0, 1, 1, "none" ],
+        [ 0, 2, 1, "none" ],
+        [ 0, 3, 1, "none" ],
+        [ 0, 4, 1, "none" ],
+        [ 0, 5, 1, "none" ],
+        [ 0, 6, 1, "none" ],
+        [ 0, -1, 1, "none" ],
+        [ 0, -2, 1, "none" ],
+        [ 0, -3, 1, "none" ],
+        [ 0, -4, 1, "none" ],
+        [ 0, -5, 1, "none" ],
+        [ 0, -6, 1, "none" ],
+        [ -1, 0, 1, "none" ],
+        [ -2, 0, 1, "none" ],
+        [ -3, 0, 1, "none" ],
+        [ -4, 0, 1, "none" ],
+        [ -5, 0, 1, "none" ],
+        [ -6, 0, 1, "none" ]
+      ],
+      "180": [
+        [ 0, 6, 1, "none" ],
+        [ 0, 5, 1, "none" ],
+        [ 0, 4, 1, "none" ],
+        [ 0, 3, 1, "none" ],
+        [ 0, 2, 1, "none" ],
+        [ 0, 1, 1, "none" ],
+        [ -1, 0, 1, "none" ],
+        [ -2, 0, 1, "none" ],
+        [ -3, 0, 1, "none" ],
+        [ -4, 0, 1, "none" ],
+        [ -5, 0, 1, "none" ],
+        [ -6, 0, 1, "none" ],
+        [ 1, 0, 1, "none" ],
+        [ 2, 0, 1, "none" ],
+        [ 3, 0, 1, "none" ],
+        [ 4, 0, 1, "none" ],
+        [ 5, 0, 1, "none" ],
+        [ 6, 0, 1, "none" ],
+        [ 0, -1, 1, "none" ],
+        [ 0, -2, 1, "none" ],
+        [ 0, -3, 1, "none" ],
+        [ 0, -4, 1, "none" ],
+        [ 0, -5, 1, "none" ],
+        [ 0, -6, 1, "none" ]
+      ],
+      "270": [
+        [ -6, 0, 1, "none" ],
+        [ -5, 0, 1, "none" ],
+        [ -4, 0, 1, "none" ],
+        [ -3, 0, 1, "none" ],
+        [ -2, 0, 1, "none" ],
+        [ -1, 0, 1, "none" ],
+        [ 0, -1, 1, "none" ],
+        [ 0, -2, 1, "none" ],
+        [ 0, -3, 1, "none" ],
+        [ 0, -4, 1, "none" ],
+        [ 0, -5, 1, "none" ],
+        [ 0, -6, 1, "none" ],
+        [ 0, 1, 1, "none" ],
+        [ 0, 2, 1, "none" ],
+        [ 0, 3, 1, "none" ],
+        [ 0, 4, 1, "none" ],
+        [ 0, 5, 1, "none" ],
+        [ 0, 6, 1, "none" ],
+        [ 1, 0, 1, "none" ],
+        [ 2, 0, 1, "none" ],
+        [ 3, 0, 1, "none" ],
+        [ 4, 0, 1, "none" ],
+        [ 5, 0, 1, "none" ],
+        [ 6, 0, 1, "none" ]
+      ]
+    },
+    "rotatable": true
+  },
+  {
+    "id": "slate_47",
+    "name": "백일몽",
+    "rarity": "Legendary",
+    "condition": "none",
+    "icon": "slate_47.png",
+    "buffcoords": {
+      "0": [
+        [ 2, -1, 1, "none" ],
+        [ 2, 1, 1, "none" ],
+        [ 1, -1, 1, "none" ],
+        [ 1, 1, 1, "none" ],
+        [ -1, -1, 1, "none" ],
+        [ -1, 1, 1, "none" ],
+        [ -2, -1, 1, "none" ],
+        [ -2, 1, 1, "none" ]
+      ],
+      "90": [
+        [ 1, 2, 1, "none" ],
+        [ -1, 2, 1, "none" ],
+        [ 1, 1, 1, "none" ],
+        [ -1, 1, 1, "none" ],
+        [ 1, -1, 1, "none" ],
+        [ -1, -1, 1, "none" ],
+        [ 1, -2, 1, "none" ],
+        [ -1, -2, 1, "none" ]
+      ],
+      "180": [
+        [ -2, 1, 1, "none" ],
+        [ -2, -1, 1, "none" ],
+        [ -1, 1, 1, "none" ],
+        [ -1, -1, 1, "none" ],
+        [ 1, 1, 1, "none" ],
+        [ 1, -1, 1, "none" ],
+        [ 2, 1, 1, "none" ],
+        [ 2, -1, 1, "none" ]
+      ],
+      "270": [
+        [ -1, -2, 1, "none" ],
+        [ 1, -2, 1, "none" ],
+        [ -1, -1, 1, "none" ],
+        [ 1, -1, 1, "none" ],
+        [ -1, 1, 1, "none" ],
+        [ 1, 1, 1, "none" ],
+        [ -1, 2, 1, "none" ],
+        [ 1, 2, 1, "none" ]
+      ]
+    },
+    "rotatable": true
+  },
+  {
+    "id": "slate_48",
+    "name": "압축",
+    "rarity": "Legendary",
+    "condition": "none",
+    "icon": "slate_48.png",
+    "buffcoords": {
+      "0": [
+        [ 0, -1, 3, "none" ],
+        [ 0, -2, 2, "none" ],
+        [ 0, -3, 1, "none" ]
+      ],
+      "90": [
+        [ -1, 0, 3, "none" ],
+        [ -2, 0, 2, "none" ],
+        [ -3, 0, 1, "none" ]
+      ],
+      "180": [
+        [ 0, 1, 3, "none" ],
+        [ 0, 2, 2, "none" ],
+        [ 0, 3, 1, "none" ]
+      ],
+      "270": [
+        [ 1, 0, 3, "none" ],
+        [ 2, 0, 2, "none" ],
+        [ 3, 0, 1, "none" ]
+      ]
+    },
+    "rotatable": true
+  },
+  {
+  "id": "slate_49",
+  "name": "풀구",
+  "rarity": "UnCommon",
+  "condition": "none",
+  "icon": "slate_49.png",
+  "buffcoords": [
+    [ -1, 1, 1, "none" ],
+    [ 0, 1, 2, "none" ],
+    [ 1, 1, 1, "none" ]
+  ],
+  "rotatable": false
+},
+{
+  "id": "slate_50",
+  "name": "확신",
+  "rarity": "Legendary",
+  "condition": "none",
+  "icon": "slate_50.png",
+  "buffcoords": {
+    "0": [[ 0, -1, 5, "none" ]],
+    "90": [[ -1, 0, 5, "none" ]],
+    "180": [[ 0, 1, 5, "none" ]],
+    "270": [[ 1, 0, 5, "none" ]]
+  },
+  "rotatable": true
+}
+]
