@@ -1,6 +1,7 @@
 /* style.css */
 
-/* --- 전역 설정 및 변수 --- */
+/* 기본 & 폰트 설정 */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 :root {
     --primary-color: #6200ea; /* 보라색 계열 */
     --secondary-color: #03dac6; /* 민트색 계열 */
@@ -50,10 +51,10 @@ body {
 /* --- 메인 컨테이너 --- */
 .app-container {
     display: flex;
-    flex-grow: 1; /* 남은 공간을 채우도록 설정 */
+    flex-grow: 1;
     padding: 20px;
     gap: 20px;
-    max-width: 1400px; /* 전체 너비 제한 */
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -69,7 +70,7 @@ body {
 
 /* --- 좌측 패널: 아이템 목록 및 필터 --- */
 .item-selection-panel {
-    flex: 1; /* 1:1:1 비율로 나눌 경우 */
+    flex: 1;
     min-width: 280px;
     display: flex;
     flex-direction: column;
@@ -121,11 +122,11 @@ body {
 
 .item-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); /* 작은 카드 크기 */
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
     gap: var(--grid-gap);
     overflow-y: auto;
     flex-grow: 1;
-    padding-right: 5px; /* 스크롤바 공간 */
+    padding-right: 5px;
 }
 
 .item-card {
@@ -168,7 +169,7 @@ body {
     font-size: 0.7rem;
     padding: 2px 5px;
     border-radius: 3px;
-    min-width: 15px; /* 최소 너비 */
+    min-width: 15px;
     text-align: center;
 }
 
@@ -182,7 +183,7 @@ body {
 
 /* --- 중앙 패널: 인벤토리 그리드 --- */
 .inventory-panel {
-    flex: 2; /* 2배 넓게 */
+    flex: 2;
     display: flex;
     flex-direction: column;
 }
@@ -214,13 +215,13 @@ body {
 
 .inventory-grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr); /* GRID_WIDTH = 6 */
+    grid-template-columns: repeat(6, 1fr);
     gap: var(--grid-gap);
     flex-grow: 1;
 }
 
 .inventory-slot {
-    width: 80px; /* 슬롯 크기 고정 */
+    width: 80px;
     height: 80px;
     background-color: #2a2a2a;
     border: 1px dashed var(--border-color);
@@ -229,33 +230,33 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
-    overflow: hidden; /* 아이템 회전 시 넘치는 부분 숨김 */
+    overflow: hidden;
 }
 
 .inventory-slot img {
     max-width: 90%;
     max-height: 90%;
     object-fit: contain;
-    transition: transform 0.1s ease-out; /* 회전 애니메이션 */
+    transition: transform 0.1s ease-out;
 }
 
 .item-badge {
     position: absolute;
     bottom: 2px;
     right: 2px;
-    background-color: #3f51b5; /* 기본 뱃지 색상 */
+    background-color: #3f51b5;
     color: white;
     font-size: 0.7rem;
     padding: 2px 5px;
     border-radius: 3px;
-    z-index: 1; /* 아이템 이미지 위에 표시 */
+    z-index: 1;
 }
 
 .badge-artifact {
-    background-color: var(--rarity-legendary); /* 강화 뱃지 */
+    background-color: var(--rarity-legendary);
 }
 .badge-slate {
-    background-color: var(--secondary-color); /* 석판 뱃지 */
+    background-color: var(--secondary-color);
 }
 
 .empty-slot-buff {
@@ -268,7 +269,7 @@ body {
 
 /* --- 우측 패널: 사이드바 --- */
 .sidebar-panel {
-    flex: 1; /* 1:1:1 비율로 나눌 경우 */
+    flex: 1;
     min-width: 250px;
     display: flex;
     flex-direction: column;
@@ -301,7 +302,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    max-height: 300px; /* 고정 높이 */
+    max-height: 300px;
     overflow-y: auto;
     padding-right: 5px;
 }
@@ -365,8 +366,8 @@ body {
 }
 
 .global-effects-container {
-    flex-grow: 1; /* 남은 공간 채우기 */
-    max-height: 300px; /* 고정 높이 */
+    flex-grow: 1;
+    max-height: 300px;
     overflow-y: auto;
     padding-right: 5px;
 }
@@ -423,7 +424,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: auto; /* 항상 하단에 붙도록 */
+    margin-top: auto;
 }
 
 .action-buttons {
@@ -461,48 +462,46 @@ body {
     color: var(--secondary-color);
 }
 
-/* --- 스크롤바 커스터마이징 (선택 사항) --- */
+/* --- 스크롤바 커스터마이징 --- */
 ::-webkit-scrollbar {
     width: 8px;
 }
-
 ::-webkit-scrollbar-track {
     background: #2a2a2a;
     border-radius: 10px;
 }
-
 ::-webkit-scrollbar-thumb {
     background: #555;
     border-radius: 10px;
 }
-
 ::-webkit-scrollbar-thumb:hover {
     background: #777;
 }
 
-/* --- 반응형 디자인 (간단한 예시) --- */
+/* --- 반응형 디자인 --- */
 @media (max-width: 1024px) {
     .app-container {
-        flex-direction: column; /* 세로로 쌓기 */
+        flex-direction: column;
         padding: 15px;
     }
 
     .item-selection-panel,
     .inventory-panel,
     .sidebar-panel {
-        min-width: unset; /* 최소 너비 제한 해제 */
-        width: 100%; /* 전체 너비 사용 */
+        min-width: unset;
+        width: 100%;
+        box-sizing: border-box; /* 패딩 포함 너비 계산 */
     }
 
     .item-list {
-        grid-template-columns: repeat(auto-fill, minmax(60px, 1fr)); /* 작은 화면에서 더 작게 */
+        grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
     }
 
     .inventory-grid {
-        grid-template-columns: repeat(auto-fill, minmax(70px, 1fr)); /* 슬롯 크기 조절 */
+        grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
     }
     .inventory-slot {
-        width: auto; /* 자동 너비 */
+        width: auto;
         height: 70px;
     }
 }
