@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아티팩트 배치 시뮬레이터</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="app-header">
+        <h1>아티팩트 배치 시뮬레이터</h1>
+    </header>
+
+    <main class="app-container">
+        <section class="item-selection-panel">
+            <div id="type-tabs" class="type-tabs">
+                <button class="tab-button active" data-type="artifacts">아티팩트</button>
+                <button class="tab-button" data-type="slates">석판</button>
+            </div>
+
+            <div class="filter-controls">
+                <select id="rarity-filter">
+                    <option value="all">모든 희귀도</option>
+                    <option value="Common">Common</option>
+                    <option value="UnCommon">UnCommon</option>
+                    <option value="Rare">Rare</option>
+                    <option value="Legendary">Legendary</option>
+                    <option value="Solidarity">Solidarity</option>
+                </select>
+                <input type="text" id="name-search" placeholder="이름 검색...">
+            </div>
+
+            <div id="item-list" class="item-list">
+                </div>
+        </section>
+
+        <section class="inventory-panel">
+            <div class="inventory-controls">
+                <button id="slot-decrease-btn" class="control-btn">-</button>
+                <span id="slot-count-label">30</span> 슬롯
+                <button id="slot-increase-btn" class="control-btn">+</button>
+            </div>
+            <div id="inventory-grid" class="inventory-grid">
+                </div>
+        </section>
+
+        <aside class="sidebar-panel">
+            <div class="selected-items-display">
+                <h3>배치된 석판</h3>
+                <div id="selected-slates-list" class="selected-slates-list">
+                    </div>
+
+                <h3>배치된 아티팩트</h3>
+                <div id="selected-artifacts-list" class="selected-artifacts-list">
+                    </div>
+            </div>
+
+            <div id="global-effects-container" class="global-effects-container">
+                </div>
+        </aside>
+    </main>
+
+    <footer class="app-footer">
+        <div class="action-buttons">
+            <button id="clear-btn" class="action-btn">인벤토리 초기화</button>
+            <button id="optimize-btn" class="action-btn primary">최적 배치</button>
+        </div>
+        <div class="realtime-score">
+            현재 점수: <span id="realtime-score-value">0 / 100</span>
+        </div>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
