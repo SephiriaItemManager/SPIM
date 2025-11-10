@@ -70,6 +70,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: flex; /* 내부 스크롤을 위해 flex 적용 */
     flex-direction: column; /* 세로 방향 */
+    height: 450px;
 }
 
 /* --- 좌측 패널: 아이템 목록 및 필터 --- */
