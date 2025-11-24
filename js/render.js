@@ -1,26 +1,60 @@
 // js/render.js
 import { getOwnedItems, getInventoryState, getCurrentItemType, getGlobalEffectModes, getArtifactDB, getSlateDB, getDBItem, getSlotCount, getState } from './state.js';
 import { calculateAllBuffs, isSlotAvailable } from './utils.js';
-import { getItemList, getInventoryGrid, getSelectedSlatesList, getSelectedArtifactsList, getGlobalEffectsContainer, getSlotCountLabel, getRarityFilter, getNameSearch, getRealtimeScoreValue, getTagFilter } from './dom-elements.js'; // getTagFilter 확인
+import { getItemList, getInventoryGrid, getSelectedSlatesList, getSelectedArtifactsList, getGlobalEffectsContainer, getSlotCountLabel, getRarityFilter, getNameSearch, getRealtimeScoreValue, getTagFilter } from './dom-elements.js';
 import { RARITY_WEIGHTS, MAX_POSSIBLE_SCORE } from './constants.js';
 
 export function renderAll() {
-    // 태그 옵션 업데이트 (혹시 dom-elements에 getTagFilter가 없다면 이 줄은 주석 처리하세요)
-    // updateTagOptions(); 
+    updateTagOptions(); // ★★★ 태그 목록 갱신 추가 ★★★
     renderItems();
     renderInventoryGrid();
     updateSelectedItems();
 }
 
-// ★★★ 수정됨: export 키워드 추가 ★★★
+// ★★★ 태그 옵션 생성 함수 (새로 추가됨) ★★★
+function updateTagOptions() {
+    const currentItemType = getCurrentItemType();
+    const db = (currentItemType === 'artifacts') ? Object.values(getArtifactDB()) : Object.values(getSlateDB());
+    const tagFilter = getTagFilter();
+    
+    if (!tagFilter) return;
+
+    const currentSelection = tagFilter.value;
+    const allTags = new Set();
+
+    // 현재 DB에 있는 모든 태그 수집
+    db.forEach(item => {
+        if (item.tags && Array.isArray(item.tags)) {
+            item.tags.forEach(tag => allTags.add(tag));
+        }
+    });
+
+    // 옵션 초기화 및 재생성
+    tagFilter.innerHTML = '<option value="all">모든 태그</option>';
+    
+    Array.from(allTags).sort().forEach(tag => {
+        const option = document.createElement('option');
+        option.value = tag;
+        option.textContent = tag;
+        tagFilter.appendChild(option);
+    });
+
+    // 선택값 유지
+    if (Array.from(allTags).includes(currentSelection)) {
+        tagFilter.value = currentSelection;
+    } else {
+        tagFilter.value = 'all';
+    }
+}
+
 export function renderItems() {
     const itemList = getItemList();
     const rarityValue = getRarityFilter().value;
     const searchValue = getNameSearch().value.toLowerCase();
     
-    // 태그 필터가 있다면 가져오고, 없다면 'all'로 처리
-    const tagFilterEl = document.getElementById('tag-filter'); 
-    const tagValue = tagFilterEl ? tagFilterEl.value : 'all';
+    // ★★★ 태그 필터 값 가져오기 ★★★
+    const tagFilter = getTagFilter();
+    const tagValue = tagFilter ? tagFilter.value : 'all';
 
     const ownedItems = getOwnedItems();
     const currentItemType = getCurrentItemType();
@@ -35,7 +69,7 @@ export function renderItems() {
         // 2. 이름 검색 필터
         const nameMatch = item.name.toLowerCase().includes(searchValue);
         
-        // 3. 태그 필터 (태그가 있을 때만)
+        // 3. 태그 필터
         let tagMatch = true;
         if (tagValue !== 'all') {
             tagMatch = item.tags && item.tags.includes(tagValue);
@@ -74,7 +108,7 @@ export function renderInventoryGrid() {
         const itemState = inventoryState[i];
         
         if (itemState) {
-            renderSlot(slot, itemState, buffs);
+            renderSlot(slot, i, itemState, buffs);
         } else if (buffs.levelMap[i] > 0) {
              slot.innerHTML = `<div class="empty-slot-buff">+${buffs.levelMap[i]}</div>`;
         }
@@ -82,8 +116,7 @@ export function renderInventoryGrid() {
     }
 }
 
-function renderSlot(slotElement, itemState, buffs) {
-    buffs = buffs || calculateAllBuffs();
+function renderSlot(slotElement, slotIndex, itemState, buffs) {
     const dbItem = getDBItem(itemState.id);
     if (!dbItem) return;
 
@@ -91,19 +124,13 @@ function renderSlot(slotElement, itemState, buffs) {
     let badgeHTML = '';
     const isArtifact = itemState.type === 'artifact';
 
+    const totalLevel = (buffs.levelMap[slotIndex] || 0) + (itemState.upgrade || 0);
+    const maxUpgrade = dbItem.maxUpgrade || 0;
+
     if (isArtifact) {
-        badgeHTML = `<div class="item-badge badge-artifact">${itemState.upgrade}/${dbItem.maxUpgrade}</div>`;
+        badgeHTML = `<div class="item-badge badge-artifact">${totalLevel}/${maxUpgrade}</div>`;
     } else {
-        const slate = dbItem;
-        let totalBoost = 0;
-        const buffcoords_data = slate.buffcoords || {};
-        const buffcoords = slate.rotatable ? buffcoords_data[String(itemState.rotation)] : buffcoords_data; 
-        if (buffcoords) {
-            buffcoords.forEach(coord => {
-                if (coord[2] > 0) totalBoost += coord[2];
-            });
-        }
-        if (totalBoost > 0) badgeHTML = `<div class="item-badge badge-slate">+${totalBoost}</div>`;
+        badgeHTML = `<div class="item-badge badge-slate">${itemState.upgrade || 0}/${maxUpgrade}</div>`;
     }
     
     slotElement.innerHTML = `<img src="images/${dbItem.icon}" alt="${dbItem.name}" style="transform: rotate(${itemState.rotation || 0}deg);" draggable="true"> ${badgeHTML}`;
