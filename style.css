@@ -1,0 +1,201 @@
+/* style.css */
+
+/* 기본 & 폰트 설정 */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+:root {
+    --primary-color: #6200ea;
+    --secondary-color: #03dac6;
+    --background-color: #121212;
+    --surface-color: #1f1f1f;
+    --text-color: #e0e0e0;
+    --border-color: #333333;
+    --button-bg-hover: #7c4dff;
+
+    /* 희귀도 색상 */
+    --rarity-common:#a0a0a0;
+    --rarity-uncommon:#2196f3;
+    --rarity-rare:#ff9800;
+    --rarity-legendary:#e91e63;
+    --rarity-solidarity:#4caf50; /* 결속 */
+
+    --grid-gap: 8px; /* 간격 조정 */
+}
+
+body {
+    font-family: 'Pretendard', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    user-select: none;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+/* 레이아웃 */
+.app-container {
+    display: flex;
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 85vh; /* 전체 높이 설정 */
+}
+
+/* 패널 공통 */
+.item-selection-panel,
+.inventory-panel,
+.sidebar-panel {
+    background-color: var(--surface-color);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
+    box-sizing: border-box;
+}
+
+/* 1. 아이템 목록 (좌측) */
+.item-selection-panel {
+    flex: 1.2;
+    min-width: 300px;
+}
+
+.type-tabs { display: flex; margin-bottom: 15px; border-bottom: 2px solid #333; }
+.tab-button {
+    flex: 1; padding: 10px; background: transparent; border: none;
+    color: #888; cursor: pointer; font-weight: 600; font-size: 1rem;
+    transition: color 0.2s;
+}
+.tab-button.active { color: var(--primary-color); border-bottom: 2px solid var(--primary-color); margin-bottom: -2px; }
+
+.filter-controls { display: flex; gap: 8px; margin-bottom: 15px; }
+.filter-controls select, .filter-controls input {
+    flex: 1; padding: 8px; background: #2a2a2a; border: 1px solid var(--border-color); 
+    color: var(--text-color); border-radius: 6px; font-size: 0.9rem;
+}
+
+.item-list {
+    display: grid;
+    /* 아이템 목록도 꽉 차게 자동 조절 */
+    grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+    gap: 8px;
+    overflow-y: auto;
+    padding-right: 5px;
+    align-content: start;
+}
+
+.item-card {
+    background: #2a2a2a; border: 1px solid var(--border-color); border-radius: 6px;
+    padding: 5px; text-align: center; cursor: pointer; position: relative;
+    aspect-ratio: 1/1;
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    transition: border-color 0.2s;
+}
+.item-card:hover { border-color: var(--primary-color); background: #333; }
+.item-card img { width: 50px; height: 50px; object-fit: contain; pointer-events: none; } 
+.item-card p { display: none; } /* 이름 숨김 (깔끔하게) */
+
+.stack-display {
+    position: absolute; bottom: 4px; right: 4px; 
+    background: var(--primary-color); color: #fff; 
+    font-size: 0.75rem; font-weight: bold;
+    padding: 2px 6px; border-radius: 4px;
+}
+
+/* 2. 인벤토리 (중앙) - 여기가 핵심 수정 부분입니다 */
+.inventory-panel {
+    flex: 1.8; /* 너비 비율 */
+}
+.inventory-controls { 
+    display: flex; justify-content: center; align-items: center; gap: 15px; 
+    margin-bottom: 20px; 
+}
+.control-btn {
+    width: 30px; height: 30px; border-radius: 50%; border: none; 
+    background: var(--primary-color); color: white; font-size: 1.2rem; 
+    cursor: pointer; display: flex; justify-content: center; align-items: center;
+}
+.inventory-controls span { font-size: 1.1rem; font-weight: bold; }
+
+.inventory-grid {
+    display: grid;
+    /* ★★★ 핵심: 6칸으로 꽉 채우기 (1fr) ★★★ */
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 8px; 
+    overflow-y: auto;
+    align-content: start;
+    padding: 5px;
+}
+
+.inventory-slot {
+    /* ★★★ 핵심: 너비는 100%, 비율은 1:1 정사각형 유지 ★★★ */
+    width: 100%;
+    aspect-ratio: 1 / 1; 
+    background: #252525;
+    border: 1px solid #3a3a3a;
+    border-radius: 6px;
+    position: relative;
+    display: flex; justify-content: center; align-items: center;
+    box-sizing: border-box;
+}
+
+.inventory-slot img { 
+    width: 85%; height: 85%; object-fit: contain; 
+    cursor: grab; 
+}
+.inventory-slot.drag-over { border: 2px solid var(--secondary-color); background: #383838; }
+
+/* 뱃지 스타일 */
+.item-badge {
+    position: absolute; bottom: 2px; right: 2px;
+    font-size: 0.7rem; font-weight: bold;
+    padding: 2px 4px; border-radius: 4px; color: white;
+    pointer-events: none;
+}
+.badge-artifact { background: rgba(240, 113, 113, 0.9); }
+.badge-slate { background: rgba(3, 218, 198, 0.9); color: black; }
+.empty-slot-buff { color: var(--secondary-color); font-weight: bold; font-size: 1rem; pointer-events: none; }
+
+/* 3. 사이드바 (우측) */
+.sidebar-panel {
+    flex: 1;
+    min-width: 250px;
+}
+.selected-items-display { flex: 1; overflow-y: auto; margin-bottom: 10px; }
+.selected-items-display h3 { font-size: 1rem; color: var(--primary-color); margin: 0 0 10px; padding-bottom: 5px; border-bottom: 1px solid #444; }
+
+.selected-slates-list { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 20px; }
+.selected-slates-list img { width: 36px; height: 36px; background: #2a2a2a; border-radius: 4px; border: 1px solid #444; }
+
+.selected-artifacts-list { display: flex; flex-direction: column; gap: 8px; }
+.selected-item-card {
+    display: flex; align-items: center; gap: 10px; background: #2a2a2a; padding: 8px; border-radius: 6px; border: 1px solid #333;
+}
+.selected-item-card img { width: 40px; height: 40px; }
+.selected-item-card .item-info p { margin: 0 0 4px; font-size: 0.85rem; font-weight: bold; color: #ddd; }
+
+.item-controls { display: flex; gap: 5px; align-items: center; }
+.item-controls .control-btn {
+    width: 20px; height: 20px; background: #444; font-size: 0.8rem; border-radius: 3px;
+}
+
+/* 푸터 */
+.app-footer {
+    background: var(--surface-color); padding: 15px 30px;
+    display: flex; justify-content: space-between; align-items: center;
+    border-top: 1px solid var(--border-color);
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.action-btn { padding: 10px 20px; background: #444; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; transition: 0.2s; }
+.action-btn:hover { background: #555; }
+.action-btn.primary { background: var(--primary-color); }
+.action-btn.primary:hover { background: #7c4dff; }
+.realtime-score { font-size: 1.2rem; font-weight: bold; color: var(--secondary-color); }
+
+/* 스크롤바 */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #444; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #555; }
