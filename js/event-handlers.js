@@ -9,12 +9,12 @@ import {
 } from './state.js';
 import { optimizePlacement } from './api.js';
 import { 
-    getTypeTabs, getRarityFilter, getTagFilter, getNameSearch, // getTagFilter 추가됨
+    getTypeTabs, getRarityFilter, getNameSearch, getTagFilter, // getTagFilter 확인
     getSlotIncreaseBtn, getSlotDecreaseBtn, 
     getItemList, getInventoryGrid, getSelectedArtifactsList, 
     getGlobalEffectsContainer, getClearBtn, getOptimizeBtn
 } from './dom-elements.js';
-import { renderItems, renderAll } from './render.js'; // renderItems 추가 import
+import { renderItems, renderAll } from './render.js'; 
 
 export function setupAllEventListeners() {
     const rerender = () => registerStateChangeCallback(() => {})() 
@@ -25,17 +25,19 @@ export function setupAllEventListeners() {
             e.target.classList.add('active');
             setCurrentItemType(e.target.dataset.type);
             
-            // ★★★ 탭 전환 시 필터 초기화 (버그 방지) ★★★
+            // 탭 전환 시 필터 초기화 및 전체 다시 그리기 (태그 목록 갱신 포함)
             getRarityFilter().value = 'all';
             getTagFilter().value = 'all';
             getNameSearch().value = '';
-            
-            renderAll(); // 태그 옵션 재생성 및 목록 갱신
+            renderAll(); 
         }
     });
 
-    getRarityFilter().addEventListener('change', renderItems); // renderAll 대신 renderItems만 호출해도 됨
-    getTagFilter().addEventListener('change', renderItems);    // ★★★ 태그 필터 이벤트 추가 ★★★
+    getRarityFilter().addEventListener('change', renderItems);
+    
+    // ★★★ 태그 필터 이벤트 리스너 추가 ★★★
+    getTagFilter().addEventListener('change', renderItems);
+    
     getNameSearch().addEventListener('input', renderItems);
 
     getSlotIncreaseBtn().addEventListener('click', () => updateInventorySlotCount(getSlotCount() + 1));
@@ -54,7 +56,7 @@ export function setupAllEventListeners() {
         updateOwnedItemCount(card.dataset.itemId, -1);
     });
     
-    // 드래그 앤 드롭 관련 로직
+    // 드래그 앤 드롭 관련
     const inventoryGrid = getInventoryGrid();
     let dragStartSlotId = null;
 
@@ -94,7 +96,6 @@ export function setupAllEventListeners() {
         }
     });
 
-    // 인벤토리 클릭/우클릭
     inventoryGrid.addEventListener('click', e => {
         const slot = e.target.closest('.inventory-slot');
         if (!slot) return;
