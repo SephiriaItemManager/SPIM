@@ -1,29 +1,50 @@
 // js/render.js
 import { getOwnedItems, getInventoryState, getCurrentItemType, getGlobalEffectModes, getArtifactDB, getSlateDB, getDBItem, getSlotCount, getState } from './state.js';
 import { calculateAllBuffs, isSlotAvailable } from './utils.js';
-import { getItemList, getInventoryGrid, getSelectedSlatesList, getSelectedArtifactsList, getGlobalEffectsContainer, getSlotCountLabel, getRarityFilter, getNameSearch, getRealtimeScoreValue } from './dom-elements.js';
+import { getItemList, getInventoryGrid, getSelectedSlatesList, getSelectedArtifactsList, getGlobalEffectsContainer, getSlotCountLabel, getRarityFilter, getNameSearch, getRealtimeScoreValue, getTagFilter } from './dom-elements.js'; // getTagFilter 확인
 import { RARITY_WEIGHTS, MAX_POSSIBLE_SCORE } from './constants.js';
 
 export function renderAll() {
+    // 태그 옵션 업데이트 (혹시 dom-elements에 getTagFilter가 없다면 이 줄은 주석 처리하세요)
+    // updateTagOptions(); 
     renderItems();
     renderInventoryGrid();
     updateSelectedItems();
 }
 
-function renderItems() {
+// ★★★ 수정됨: export 키워드 추가 ★★★
+export function renderItems() {
     const itemList = getItemList();
     const rarityValue = getRarityFilter().value;
     const searchValue = getNameSearch().value.toLowerCase();
+    
+    // 태그 필터가 있다면 가져오고, 없다면 'all'로 처리
+    const tagFilterEl = document.getElementById('tag-filter'); 
+    const tagValue = tagFilterEl ? tagFilterEl.value : 'all';
+
     const ownedItems = getOwnedItems();
     const currentItemType = getCurrentItemType();
     const db = (currentItemType === 'artifacts') ? Object.values(getArtifactDB()) : Object.values(getSlateDB());
     
     itemList.innerHTML = '';
-    db.filter(item => {
+    
+    const filteredItems = db.filter(item => {
+        // 1. 희귀도 필터
         const rarityMatch = rarityValue === 'all' || item.rarity === rarityValue;
+        
+        // 2. 이름 검색 필터
         const nameMatch = item.name.toLowerCase().includes(searchValue);
-        return rarityMatch && nameMatch;
-    }).forEach(item => {
+        
+        // 3. 태그 필터 (태그가 있을 때만)
+        let tagMatch = true;
+        if (tagValue !== 'all') {
+            tagMatch = item.tags && item.tags.includes(tagValue);
+        }
+
+        return rarityMatch && nameMatch && tagMatch;
+    });
+
+    filteredItems.forEach(item => {
         const count = ownedItems[item.id]?.count || 0;
         const card = document.createElement('div');
         card.className = 'item-card';
@@ -53,7 +74,7 @@ export function renderInventoryGrid() {
         const itemState = inventoryState[i];
         
         if (itemState) {
-            renderSlot(slot, i, itemState, buffs); // 인덱스 i 전달
+            renderSlot(slot, itemState, buffs);
         } else if (buffs.levelMap[i] > 0) {
              slot.innerHTML = `<div class="empty-slot-buff">+${buffs.levelMap[i]}</div>`;
         }
@@ -61,8 +82,8 @@ export function renderInventoryGrid() {
     }
 }
 
-// ★★★ 수정됨: 슬롯 인덱스를 받아 토탈 레벨 계산 및 뱃지 표시 수정 ★★★
-function renderSlot(slotElement, slotIndex, itemState, buffs) {
+function renderSlot(slotElement, itemState, buffs) {
+    buffs = buffs || calculateAllBuffs();
     const dbItem = getDBItem(itemState.id);
     if (!dbItem) return;
 
@@ -70,17 +91,19 @@ function renderSlot(slotElement, slotIndex, itemState, buffs) {
     let badgeHTML = '';
     const isArtifact = itemState.type === 'artifact';
 
-    // 현재 슬롯이 받고 있는 버프 + 아이템 자체 강화 수치
-    const totalLevel = (buffs.levelMap[slotIndex] || 0) + (itemState.upgrade || 0);
-    const maxUpgrade = dbItem.maxUpgrade || 0; // undefined면 0으로 표시
-
     if (isArtifact) {
-        // 아티팩트: (총합 레벨) / (최대 강화)
-        badgeHTML = `<div class="item-badge badge-artifact">${totalLevel}/${maxUpgrade}</div>`;
+        badgeHTML = `<div class="item-badge badge-artifact">${itemState.upgrade}/${dbItem.maxUpgrade}</div>`;
     } else {
-        // 석판: (자체 강화) / 0  -> 사용자 요청대로 표시
-        // 석판은 배치를 위해 존재하는 것이므로 보통 레벨이 의미 없지만, 요청대로 표시
-        badgeHTML = `<div class="item-badge badge-slate">${itemState.upgrade || 0}/${maxUpgrade}</div>`;
+        const slate = dbItem;
+        let totalBoost = 0;
+        const buffcoords_data = slate.buffcoords || {};
+        const buffcoords = slate.rotatable ? buffcoords_data[String(itemState.rotation)] : buffcoords_data; 
+        if (buffcoords) {
+            buffcoords.forEach(coord => {
+                if (coord[2] > 0) totalBoost += coord[2];
+            });
+        }
+        if (totalBoost > 0) badgeHTML = `<div class="item-badge badge-slate">+${totalBoost}</div>`;
     }
     
     slotElement.innerHTML = `<img src="images/${dbItem.icon}" alt="${dbItem.name}" style="transform: rotate(${itemState.rotation || 0}deg);" draggable="true"> ${badgeHTML}`;
